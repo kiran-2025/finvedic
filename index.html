@@ -14,77 +14,93 @@
     <link rel="stylesheet" href="assets/css/splide.css">
     <script src="assets/js/splide.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        .header-section {
+            background-image: url('assets/images/banners/Banner.png');
+        }
+
+        @media screen and (max-width: 767px) {
+            .header-section {
+                background-image: url('assets/images/banners/Banner-mobile.png');
+            }
+        }
+    </style>
 </head>
 
 
 <body class="container-fluid ">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow animate__animated animate__pulse">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="assets/images/logo/logo.png" class="w-100">
-            </a>
-            <button class="navbar-toggler btn" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">About US</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Cources
-                        </a>
-                        <ul class="dropdown-menu bordered dropdown-menu-style" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Payments <i class="fa-solid fa-chevron-right"></i></a>
-                            </li>
-                            <li><a class="dropdown-item" href="#">Banking <i class="fa-solid fa-chevron-right"></i></a>
-                            </li>
-                            <li><a class="dropdown-item" href="#">Digital Landing <i
-                                        class="fa-solid fa-chevron-right"></i></a></li>
-                            <li><a class="dropdown-item" href="#">Wealth Management <i
-                                        class="fa-solid fa-chevron-right"></i></a></li>
-                            <li><a class="dropdown-item" href="#">Insurance <i
-                                        class="fa-solid fa-chevron-right"></i></a></li>
-                            <li><a class="dropdown-item" href="#">Capital Markets <i
-                                        class="fa-solid fa-chevron-right"></i></a></li>
-                            <li><a class="dropdown-item" href="#">SMB <i class="fa-solid fa-chevron-right"></i></a></li>
-                            <li><a class="dropdown-item" href="#">Real Estate <i
-                                        class="fa-solid fa-chevron-right"></i></a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">External</a>
-                    </li>
-                </ul>
-                <ui class="navbar-nav">
-                    <li class="nav-item mx-3">
-                        <button class="btn btn-sm sign-in-btn rounded my-2">
-                            <i class="fa-solid fa-arrow-right-from-bracket text-blue"></i>&nbsp;&nbsp; Sign In
-                        </button>
-                    </li>
-                    <li class="nav-item">
-                        <button class="btn btn-sm text-white sign-up-btn rounded my-2">
-                            <i class="fa-regular fa-user text-white"></i>&nbsp;&nbsp;Sign up
-                        </button>
-                    </li>
-                </ui>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow animate__animated animate__pulse">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/logo/logo.png" class="w-100">
+                </a>
+                <button class="navbar-toggler btn" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">About US</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Cources
+                            </a>
+                            <ul class="dropdown-menu bordered dropdown-menu-style" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Payments <i
+                                            class="fa-solid fa-chevron-right"></i></a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Banking <i
+                                            class="fa-solid fa-chevron-right"></i></a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Digital Landing <i
+                                            class="fa-solid fa-chevron-right"></i></a></li>
+                                <li><a class="dropdown-item" href="#">Wealth Management <i
+                                            class="fa-solid fa-chevron-right"></i></a></li>
+                                <li><a class="dropdown-item" href="#">Insurance <i
+                                            class="fa-solid fa-chevron-right"></i></a></li>
+                                <li><a class="dropdown-item" href="#">Capital Markets <i
+                                            class="fa-solid fa-chevron-right"></i></a></li>
+                                <li><a class="dropdown-item" href="#">SMB <i class="fa-solid fa-chevron-right"></i></a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Real Estate <i
+                                            class="fa-solid fa-chevron-right"></i></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">External</a>
+                        </li>
+                    </ul>
+                    <ui class="navbar-nav">
+                        <li class="nav-item mx-3">
+                            <button class="btn btn-sm sign-in-btn rounded my-2">
+                                <i class="fa-solid fa-arrow-right-from-bracket text-blue"></i>&nbsp;&nbsp; Sign In
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-sm text-white sign-up-btn rounded my-2">
+                                <i class="fa-regular fa-user text-white"></i>&nbsp;&nbsp;Sign up
+                            </button>
+                        </li>
+                    </ui>
 
 
+                </div>
             </div>
-        </div>
-    </nav>
-    <div class="py-4"></div>
+        </nav>
+    </div>
+    <div class="pt-5"></div>
 
-    <div class="header-section d-flex align-items-lg-center align-items-md-center align-items-sm-start text-center-sm">
-        <img src="assets/images/banners/Banner.png" class="w-100 header-img d-none d-md-none d-lg-block">
-        <img src="assets/images/banners/Banner-mobile.png" class="w-100 header-img d-block d-md-block d-lg-none">
+    <div class="header-section d-flex align-items-start text-center-sm">
+        <!-- <img src="assets/images/banners/Banner.png" class="w-100 header-img d-none d-md-none d-lg-block">
+        <img src="assets/images/banners/Banner-mobile.png" class="w-100 header-img d-block d-md-block d-lg-none"> -->
         <div class="container-fluid header-content">
             <div class="container">
                 <div class="row h-100 py-5 animate__animated animate__slideInLeft">
@@ -115,11 +131,16 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
-
-    <div class="w-100 life-Section">
+    <div class="row align-items-end" style="z-index:9999">
+        <div class="col-12 text-center pb-5">
+            <a class="btn rounded-circle shadow" aria-current="page" href="#Professional">
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+        </div>
+    </div>
+    <div class="w-100 life-Section pt-5" id="Professional">
         <svg xmlns="http://www.w3.org/2000/svg" width="100%" class="life-svg" viewBox="0 0 1921.496 1201.249">
             <g id="Group_88" data-name="Group 88" transform="translate(8.496 -835.752)">
                 <rect id="Rectangle_108" data-name="Rectangle 108" width="1920" height="470"
@@ -129,14 +150,8 @@
                     transform="translate(-8.496 835.752)" fill="#f8f9ff" />
             </g>
         </svg>
-        <div class="row">
-            <div class="col-12 text-center pb-5">
-                <button class="btn rounded-circle shadow" onclick="window.scrollBy(0, 600);">
-                    <i class="fa-solid fa-chevron-down"></i>
-                </button>
-            </div>
-        </div>
         <div class="container js-scroll fade-in-bottom">
+           
             <div class="container h1 text-center">
                 Life as a <br class="d-block d-lg-none"> FinVadic Professional
                 <center>
@@ -253,8 +268,8 @@
 
     </div>
 
-    <div class="js-scroll why-fintech-section d-none d-md-none d-lg-block "
-        style="background-image: url('assets/images/img/Union2.png');">
+    <div class="js-scroll why-fintech-section d-none d-md-none d-lg-block"
+        style="background-image: url('assets/svgs/Group170.svg'),url('assets/svgs/Group171.svg'),url('assets/images/img/Union2.png');">
         <div class="container text-center pt-5">
             <div class="row py-5 js-scroll fade-in">
                 <div class="col-12 h1 text-white">
@@ -821,7 +836,7 @@
                 <h4 style="color:#6366F1">What You I learn (FINTECH CORE)</h4>
             </div>
             <div class="col-12 col-md-12 col-lg-9">
-                <div class="row pt-5">
+                <div class="row pt-5 " id="accordion">
                     <div class="col-12 py-3">
                         <div class="card border  bg-white" style="border-radius: 0.8rem;">
                             <div class="card-header fw-bolder fs-4 d-flex align-items-center  justify-content-between">
@@ -830,19 +845,20 @@
                                     <button type="button" class="btn btn-light rounded-circle" id="m1-down"
                                         style="display:none" data-bs-toggle="collapse" href="#collapseOne" role="button"
                                         aria-expanded="false" aria-controls="collapseOne"
-                                        data-bs-target=".multi-collapse" onclick="GetToggle('m1-down','m1-up')">
+                                        data-bs-target=".multi-collapse" onclick="GetToggle('m1-down')">
                                         <i class="fa-solid fa-angle-down"></i>
                                     </button>
                                     <button type="button" class="btn btn-light rounded-circle  show" id="m1-up"
                                         data-bs-toggle="collapse" href="#collapseOne" role="button"
                                         aria-expanded="false" aria-controls="collapseOne"
                                         data-bs-target=".multi-collapse" style="background: #6366F1;"
-                                        onclick="GetToggle('m1-up','m1-down')">
+                                        onclick="GetToggle('m1-up')">
                                         <i class="fa-solid fa-angle-up text-white"></i>
                                     </button>
                                 </div>
                             </div>
-                            <div class="collapse show card-body multi-collapse" id="collapseOne">
+                            <div class="collapse show card-body multi-collapse" id="collapseOne"
+                                data-bs-parent="#accordion">
                                 <div class="row align-items-center">
                                     <div class="col-6 col-md-3 col-lg-3">
                                         <img src="assets/images/img/Rectangle216.png" class="w-100">
@@ -884,18 +900,19 @@
                                     <button type="button" class="btn btn-light rounded-circle" id="m2-down"
                                         data-bs-toggle="collapse" href="#collapseTwo" role="button"
                                         aria-expanded="false" aria-controls="collapseTwo"
-                                        onclick="GetToggle('m2-down','m2-up')">
+                                        onclick="GetToggle('m2-down')">
                                         <i class="fa-solid fa-angle-down"></i>
                                     </button>
                                     <button type="button" class="btn rounded-circle" id="m2-up"
                                         data-bs-toggle="collapse" href="#collapseTwo" role="button"
-                                        aria-expanded="false" aria-controls="collapseTwo"
-                                        onclick="GetToggle('m2-up','m2-down')" style="background: #6366F1;display:none">
+                                        aria-expanded="false" aria-controls="collapseTwo" onclick="GetToggle('m2-up')"
+                                        style="background: #6366F1;display:none">
                                         <i class="fa-solid fa-angle-up text-white"></i>
                                     </button>
                                 </div>
                             </div>
-                            <div class="collapse card-body multi-collapseII" id="collapseTwo">
+                            <div class="collapse card-body multi-collapseII" id="collapseTwo"
+                                data-bs-parent="#accordion">
                                 <div class="row align-items-center">
                                     <div class="col-6 col-md-3 col-lg-3">
                                         <img src="assets/images/img/Rectangle216.png" class="w-100">
@@ -937,19 +954,19 @@
                                     <button type="button" class="btn btn-light rounded-circle" id="m3-down"
                                         data-bs-toggle="collapse" href="#collapseThree" role="button"
                                         aria-expanded="false" aria-controls="collapseThree"
-                                        data-bs-target=".multi-collapseIII" onclick="GetToggle('m3-down','m3-up')">
+                                        data-bs-target=".multi-collapseIII" onclick="GetToggle('m3-down')">
                                         <i class="fa-solid fa-angle-down"></i>
                                     </button>
                                     <button type="button" class="btn btn-light rounded-circle" id="m3-up"
                                         data-bs-toggle="collapse" href="#collapseThree" role="button"
-                                        aria-expanded="false" aria-controls="collapseThree"
-                                        onclick="GetToggle('m3-up','m3-down')" data-bs-target=".multi-collapseIII"
-                                        style="background: #6366F1;display: none;">
+                                        aria-expanded="false" aria-controls="collapseThree" onclick="GetToggle('m3-up')"
+                                        data-bs-target=".multi-collapseIII" style="background: #6366F1;display: none;">
                                         <i class="fa-solid fa-angle-up text-white"></i>
                                     </button>
                                 </div>
                             </div>
-                            <div class="collapse card-body multi-collapseIII" id="collapseThree">
+                            <div class="collapse card-body multi-collapseIII" id="collapseThree"
+                                data-bs-parent="#accordion">
                                 <div class="row align-items-center">
                                     <div class="col-6 col-md-3 col-lg-3">
                                         <img src="assets/images/img/Rectangle216.png" class="w-100">
@@ -991,19 +1008,19 @@
                                     <button type="button" class="btn btn-light rounded-circle" id="m4-down"
                                         data-bs-toggle="collapse" href="#collapseFour" role="button"
                                         aria-expanded="false" aria-controls="collapseFour"
-                                        data-bs-target=".multi-collapseIV" onclick="GetToggle('m4-down','m4-up')">
+                                        data-bs-target=".multi-collapseIV" onclick="GetToggle('m4-down')">
                                         <i class="fa-solid fa-angle-down"></i>
                                     </button>
                                     <button type="button" class="btn btn-light rounded-circle" id="m4-up"
                                         data-bs-toggle="collapse" href="#collapseFour" role="button"
-                                        aria-expanded="false" aria-controls="collapseFour"
-                                        onclick="GetToggle('m4-up','m4-down')" data-bs-target=".multi-collapseIV"
-                                        style="background: #6366F1;display:none">
+                                        aria-expanded="false" aria-controls="collapseFour" onclick="GetToggle('m4-up')"
+                                        data-bs-target=".multi-collapseIV" style="background: #6366F1;display:none">
                                         <i class="fa-solid fa-angle-up text-white"></i>
                                     </button>
                                 </div>
                             </div>
-                            <div class="collapse card-body multi-collapseIV" id="collapseFour">
+                            <div class="collapse card-body multi-collapseIV" id="collapseFour"
+                                data-bs-parent="#accordion">
                                 <div class="row align-items-center">
                                     <div class="col-6 col-md-3 col-lg-3">
                                         <img src="assets/images/img/Rectangle216.png" class="w-100">
@@ -1312,10 +1329,20 @@
                         <section class="splide splideOne" aria-labelledby="carousel-heading">
                             <div class="splide__track">
                                 <ul class="splide__list">
-                                    <li class="splide__slide"><img src="assets/images/img/Group7423.png"
-                                            class="w-75 h-100"></li>
-                                    <li class="splide__slide"><img src="assets/images/img/Group7428.png"
-                                            class="w-75 h-100"></li>
+                                    <li class="splide__slide">
+                                        <div class="row justify-content-center align-items-center">
+                                            <div class="col-12 col-md-12 col-lg-10">
+                                                <img src="assets/images/img/Group7423.png" class="w-100 ">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="row justify-content-center align-items-center">
+                                            <div class="col-12 col-md-12 col-lg-10">
+                                                <img src="assets/images/img/Group7428.png" class="w-100 ">
+                                            </div>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="splide__arrows splide__arrows--ltr d-none d-md-none d-lg-block">
@@ -1401,9 +1428,57 @@
 </body>
 <script src="assets/js/bootstrap.js"></script>
 <script>
-    function GetToggle(HideBtn, showBtn) {
-        document.getElementById(showBtn).style.display = 'block';
-        document.getElementById(HideBtn).style.display = 'none';
+    function GetToggle(Btn) {
+        if (Btn == 'm1-up' || Btn == 'm2-up' || Btn == 'm3-up' || Btn == 'm4-up') {
+            document.getElementById(Btn).style.display = 'none';
+            document.getElementById('m1-down').style.display = 'block';
+            document.getElementById('m2-down').style.display = 'block';
+            document.getElementById('m3-down').style.display = 'block';
+            document.getElementById('m4-down').style.display = 'block';
+        } else if (Btn == 'm1-down') {
+            document.getElementById('m1-down').style.display = 'none';
+            document.getElementById('m2-down').style.display = 'block';
+            document.getElementById('m3-down').style.display = 'block';
+            document.getElementById('m4-down').style.display = 'block';
+
+            document.getElementById('m1-up').style.display = 'block';
+            document.getElementById('m2-up').style.display = 'none';
+            document.getElementById('m3-up').style.display = 'none';
+            document.getElementById('m4-up').style.display = 'none';
+        }
+        else if (Btn == 'm2-down') {
+            document.getElementById('m1-down').style.display = 'block';
+            document.getElementById('m2-down').style.display = 'none';
+            document.getElementById('m3-down').style.display = 'block';
+            document.getElementById('m4-down').style.display = 'block';
+
+            document.getElementById('m1-up').style.display = 'none';
+            document.getElementById('m2-up').style.display = 'block';
+            document.getElementById('m3-up').style.display = 'none';
+            document.getElementById('m4-up').style.display = 'none';
+        }
+        else if (Btn == 'm3-down') {
+            document.getElementById('m1-down').style.display = 'block';
+            document.getElementById('m2-down').style.display = 'block';
+            document.getElementById('m3-down').style.display = 'none';
+            document.getElementById('m4-down').style.display = 'block';
+
+            document.getElementById('m1-up').style.display = 'none';
+            document.getElementById('m2-up').style.display = 'none';
+            document.getElementById('m3-up').style.display = 'block';
+            document.getElementById('m4-up').style.display = 'none';
+        }
+        else if (Btn == 'm4-down') {
+            document.getElementById('m1-down').style.display = 'block';
+            document.getElementById('m2-down').style.display = 'block';
+            document.getElementById('m3-down').style.display = 'block';
+            document.getElementById('m4-down').style.display = 'none';
+
+            document.getElementById('m1-up').style.display = 'none';
+            document.getElementById('m2-up').style.display = 'none';
+            document.getElementById('m3-up').style.display = 'none';
+            document.getElementById('m4-up').style.display = 'block';
+        }
     }
     const scrollElements = document.querySelectorAll(".js-scroll");
     console.log(scrollElements);

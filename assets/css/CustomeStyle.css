@@ -69,13 +69,20 @@
 
 .header-section {
     position: relative;
-    height: 100vh;
+    height: 90vh;
+    z-index:-1;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-attachment: fixed; */
+    
 }
 
 .header-img {
     position: absolute;
     left: 0px;
     right: 0px;
+    top:0px;
+    bottom:0px;
     z-index: -1;
 }
 
@@ -87,18 +94,19 @@
     transform: scale(0.95);
 }
 
-.header-section {
-    position: relative;
-    height: 85vh
-}
 
 .life-Section {
     position: relative;
+    background-color: #f8f9ff;
+    margin-top: -80px;
+    z-index:-1;
 }
 
 .life-svg {
     position: absolute;
-    z-index: -1
+    margin-top: -30px;
+    left:0;
+    right:0;
 }
 
 
@@ -173,10 +181,9 @@
 
 
 .why-fintech-section {
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: top;
-    z-index: 0;
+    background-size: 200px 300px,200px 400px,100% 100% ;
+    background-position: left top,bottom right,top;
+    background-repeat: no-repeat,no-repeat , no-repeat;
 }
 
 .splide__pagination__page_custome {
@@ -421,6 +428,9 @@ dd i {
 }
 
 @media screen and (max-width: 767px) {
+    .header-section{
+        height:80vh!important;
+    }
     .join-btn {
         background-color: #ffffff !important;
         color: #6366F1 !important;
