@@ -1,9 +1,19 @@
 * {
-    /* font-family: 'Raleway', sans-serif; */
+    font-family: 'Raleway', sans-serif;
     color: #281C45;
-    font-size: 15px;
+    font-size: 13px;
 }
 
+.text-justify{
+    text-align: justify;
+}
+
+.lh-xl{
+    line-height: 250%;
+}
+.fw-800{
+    font-weight: 800;
+}
 .fs-10 {
     font-size: 10px;
 }
@@ -69,7 +79,7 @@
 
 .header-section {
     position: relative;
-    height: 90vh;
+    height: 100vh;
     z-index:-1;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -98,13 +108,13 @@
 .life-Section {
     position: relative;
     background-color: #f8f9ff;
-    margin-top: -80px;
+    margin-top: -70px;
     z-index:-1;
 }
 
 .life-svg {
     position: absolute;
-    margin-top: -30px;
+    margin-top: -15px;
     left:0;
     right:0;
 }
@@ -367,6 +377,10 @@ dd i {
     color: #6366F1;
 }
 
+.dropdown-menu .dropdown-item:hover, .dropdown-menu .dropdown-item:hover i{
+    background-color: #281C45;
+    color: white!important;
+}
 @media screen and (min-width: 992px) {
     .join-btn {
         background-color: #6366F1 !important;
@@ -378,7 +392,7 @@ dd i {
     }
 
     .card-text {
-        font-size: 14px;
+        font-size: 13px;
         color: #585C7B;
     }
 
@@ -424,12 +438,18 @@ dd i {
     .text-center-sm {
         text-align: center;
     }
+    .about-section {
+        background-repeat: no-repeat;
+        background-size: 250% 100%;
+        background-position: top;
+        z-index: 0;
+    }
 
 }
 
 @media screen and (max-width: 767px) {
     .header-section{
-        height:80vh!important;
+        height:90vh!important;
     }
     .join-btn {
         background-color: #ffffff !important;
@@ -474,5 +494,11 @@ dd i {
 
     .text-center-sm {
         text-align: center;
+    }
+    .about-section {
+        background-repeat: no-repeat;
+        background-size: 250% 90%;
+        background-position: top;
+        z-index: 0;
     }
 }

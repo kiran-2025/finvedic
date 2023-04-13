@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,30 +9,68 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
-    <title>FinVedic Websites</title>
+    <title>FinVedic Website</title>
     <link rel="stylesheet" href="assets/css/splide.css">
     <script src="assets/js/splide.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <style>
         .header-section {
-            background-image: url('assets/images/banners/Banner.png');
+            background-image: url('assets/images/Bannerimg12x.png');
+        }
+        .lab-section{
+            background-image: url('assets/images/img/Group 160.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .Excellence-section{
+            background-image: url('assets/images/Group168.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .finvedic-section{
+            height:100vh;
+            background-image: url('assets/images/img/Component181.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
         }
 
         @media screen and (max-width: 767px) {
             .header-section {
-                background-image: url('assets/images/banners/Banner-mobile.png');
+                background-image: url('assets/images/Group74702x.png');
             }
+            .lab-section{
+                background-image: url('assets/images/img/Group7480.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 200% 100%;
+            }
+            .Excellence-section{
+                background-image: url('assets/images/Group7481.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 200% 100%;
+            }
+            .mainlab-section{
+                box-shadow:0px -100px 147px 0px #ffffff;
+            }
+            .finvedic-section{
+                height:60vh;
+                background-image: url('assets/images/img/Component181.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 150% 100%;
+            }
+           
         }
     </style>
 </head>
-
-
 <body class="container-fluid ">
+    <!-- navbar start -->
     <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow animate__animated animate__pulse">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="assets/images/logo/logo.png" class="w-100">
+                    <img src="assets/images/Asset22x.png" width="110px">
                 </a>
                 <button class="navbar-toggler btn" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -42,8 +79,8 @@
                 </button>
                 <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">About US</a>
+                        <li class="nav-item">   
+                            <a class="nav-link active" aria-current="page" href="#">About Us</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -51,24 +88,17 @@
                                 Cources
                             </a>
                             <ul class="dropdown-menu bordered dropdown-menu-style" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Payments <i
-                                            class="fa-solid fa-chevron-right"></i></a>
+                                <li><a class="dropdown-item" href="#">Payments <i class="fa-solid fa-angle-right"></i></a>
                                 </li>
-                                <li><a class="dropdown-item" href="#">Banking <i
-                                            class="fa-solid fa-chevron-right"></i></a>
+                                <li><a class="dropdown-item" href="#">Banking <i class="fa-solid fa-angle-right"></i></a>
                                 </li>
-                                <li><a class="dropdown-item" href="#">Digital Landing <i
-                                            class="fa-solid fa-chevron-right"></i></a></li>
-                                <li><a class="dropdown-item" href="#">Wealth Management <i
-                                            class="fa-solid fa-chevron-right"></i></a></li>
-                                <li><a class="dropdown-item" href="#">Insurance <i
-                                            class="fa-solid fa-chevron-right"></i></a></li>
-                                <li><a class="dropdown-item" href="#">Capital Markets <i
-                                            class="fa-solid fa-chevron-right"></i></a></li>
-                                <li><a class="dropdown-item" href="#">SMB <i class="fa-solid fa-chevron-right"></i></a>
+                                <li><a class="dropdown-item" href="#">Digital Landing <i class="fa-solid fa-angle-right"></i></a></li>
+                                <li><a class="dropdown-item" href="#">Wealth Management <i class="fa-solid fa-angle-right"></i></a></li>
+                                <li><a class="dropdown-item" href="#">Insurance <i class="fa-solid fa-angle-right"></i></a></li>
+                                <li><a class="dropdown-item" href="#">Capital Markets <i class="fa-solid fa-angle-right"></i></a></li>
+                                <li><a class="dropdown-item" href="#">SMB <i class="fa-solid fa-angle-right"></i></a>
                                 </li>
-                                <li><a class="dropdown-item" href="#">Real Estate <i
-                                            class="fa-solid fa-chevron-right"></i></a></li>
+                                <li><a class="dropdown-item" href="#">Real Estate <i class="fa-solid fa-angle-right"></i></a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -86,7 +116,7 @@
                         </li>
                         <li class="nav-item">
                             <button class="btn btn-sm text-white sign-up-btn rounded my-2">
-                                <i class="fa-regular fa-user text-white"></i>&nbsp;&nbsp;Sign up
+                                <i class="fa-regular fa-user text-white"></i>&nbsp;&nbsp;Sign Up
                             </button>
                         </li>
                     </ui>
@@ -96,8 +126,9 @@
             </div>
         </nav>
     </div>
+    <!-- navbar end -->
     <div class="pt-5"></div>
-
+    <!-- header section start -->
     <div class="header-section d-flex align-items-start text-center-sm">
         <!-- <img src="assets/images/banners/Banner.png" class="w-100 header-img d-none d-md-none d-lg-block">
         <img src="assets/images/banners/Banner-mobile.png" class="w-100 header-img d-block d-md-block d-lg-none"> -->
@@ -105,9 +136,9 @@
             <div class="container">
                 <div class="row h-100 py-5 animate__animated animate__slideInLeft">
                     <div class="col-12 col-lg-6 text-white py-sm-4 py-md-5 py-lg-5">
-                        <p class="display-4 text-white">
-                            The Fintech Industry employs over
-                            <span class="fw-bolder display-4 text-white">3,00,000 people worldwide</span>
+                        <p class="display-5 text-white fw-normal">
+                            The FinTech Industry employs over
+                            <span class="display-5 text-white" style="font-weight: 900;">3,00,000 people worldwide</span>
                         </p>
                     </div>
                     <div class="col-12">
@@ -133,13 +164,15 @@
             </div>
         </div>
     </div>
-    <div class="row align-items-end" style="z-index:9999">
+    <!-- header section ends -->
+    <div class="row align-items-center" style="z-index:9999;">
         <div class="col-12 text-center pb-5">
-            <a class="btn rounded-circle shadow" aria-current="page" href="#Professional">
+            <a class="btn rounded-circle shadow bg-white" aria-current="page" href="#Professional">
                 <i class="fa-solid fa-chevron-down"></i>
             </a>
         </div>
     </div>
+
     <div class="w-100 life-Section pt-5" id="Professional">
         <svg xmlns="http://www.w3.org/2000/svg" width="100%" class="life-svg" viewBox="0 0 1921.496 1201.249">
             <g id="Group_88" data-name="Group 88" transform="translate(8.496 -835.752)">
@@ -150,10 +183,10 @@
                     transform="translate(-8.496 835.752)" fill="#f8f9ff" />
             </g>
         </svg>
+         <!-- Life as a FinVedic Professional start -->
         <div class="container js-scroll fade-in-bottom">
-           
-            <div class="container h1 text-center">
-                Life as a <br class="d-block d-lg-none"> FinVadic Professional
+            <div class="container h1 text-center fw-bold">
+                Life as a <br class="d-block d-lg-none"> FinVedic Professional
                 <center>
                     <div style="height:6px;width:100px;background-color: #585C7B;" class="rounded mt-3"></div>
                 </center>
@@ -162,11 +195,11 @@
                 <div class="col-12 col-md-6 col-lg-3 py-lg-4 py-4">
                     <div class="card">
                         <div class="card-header">
-                            <img src="assets/images/icons/Group 7401.svg">
+                            <img src="assets/images/icons/Group 7401.svg" height="49px">
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Great Salary & Peaks</h5>
-                            <p class="card-text">It’s easy to learn, high-paying, and offers the opportunity to be part
+                            <h5 class="card-title fw-bold">Great Salary & Perks</h5>
+                            <p class="card-text ">It’s easy to learn, high-paying, and offers the opportunity to be part
                                 of a fast-growing industry.</p>
                         </div>
                     </div>
@@ -174,11 +207,11 @@
                 <div class="col-12 col-md-6 col-lg-3 py-lg-4 py-1">
                     <div class="card">
                         <div class="card-header">
-                            <img src="assets/images/icons/Group 7403.svg">
+                            <img src="assets/images/icons/Group 7403.svg" height="49px">
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Accelerated Growth Path</h5>
-                            <p class="card-text">We will offer an accelerated growth path, providing you with
+                            <h5 class="card-title fw-bold">Accelerated Growth Path</h5>
+                            <p class="card-text ">We will offer an accelerated growth path, providing you with
                                 opportunities to advance quickly into the challenging FinTech world.</p>
                         </div>
                     </div>
@@ -186,11 +219,11 @@
                 <div class="col-12 col-md-6 col-lg-3 py-lg-4 py-1">
                     <div class="card">
                         <div class="card-header">
-                            <img src="assets/images/icons/Group 7400.svg">
+                            <img src="assets/images/icons/Group 7400.svg" height="49px">
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Build a Solid Profile</h5>
-                            <p class="card-text">We are committed to providing a exciting and rewarding FinTech
+                            <h5 class="card-title fw-bold">Build a Solid Profile</h5>
+                            <p class="card-text ">We are committed to providing a exciting and rewarding FinTech
                                 environment that will push you to your limits and help you achieve your career goals.
                             </p>
                         </div>
@@ -199,11 +232,11 @@
                 <div class="col-12 col-md-6 col-lg-3 py-lg-4 py-1">
                     <div class="card">
                         <div class="card-header">
-                            <img src="assets/images/icons/Group 7402.svg">
+                            <img src="assets/images/icons/Group 7402.svg" height="49px">
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Achieve the Extra-Ordinary</h5>
-                            <p class="card-text">Fintech, which is predicted to grow into a trillion-dollar industry,
+                            <h5 class="card-title fw-bold">Achieve the Extra-Ordinary</h5>
+                            <p class="card-text ">Fintech, which is predicted to grow into a trillion-dollar industry,
                                 will allow you to achieve the extraordinary by giving yourself a fantastic career
                                 opportunity opportunity.</p>
                         </div>
@@ -211,6 +244,9 @@
                 </div>
             </div>
         </div>
+         <!-- Life as a FinVedic Professional end -->
+
+         <!-- About Us starts -->
         <div class="container-fluid pt-5 bg-light-gray-lg-grey">
             <div class="container">
                 <div class="row bg-light-gray-lg-grey">
@@ -224,12 +260,12 @@
                                             class="rounded my-2"></div>
                                     </center>
                                 </div>
-                                <h1 class="d-lg-flex">
-                                    Who We are ?
-                                </h1>
+                                <h2 class="d-lg-flex fw-800">
+                                    Who We Are?
+                                </h2>
                             </div>
                             <div class="col-12 col-lg-6 align-self-center d-block d-lg-none py-3">
-                                <img src="assets/images/img/Mask.png" class="w-100">
+                                <img src="assets/images/MaskGroup72x.png" class="w-100">
                             </div>
                             <div class="col-12" style="text-align:justify">
                                 <p>
@@ -238,7 +274,8 @@
                                     has
                                     never been greater, and we're dedicated to helping you succeed in this exciting new
                                     field.
-                                    <br><br>
+                                    </p>
+                                    <p>
                                     At FinVedit we are a group of passionate individuals who believe in helping students
                                     and
                                     professionals who want to learn more about finance, financial technology, and the
@@ -250,7 +287,8 @@
                                     the industry that teaches them everything they need to know about FinTech in a way
                                     they
                                     can understand.
-                                    <br><br>
+                                    </p>
+                                    <p>
                                     Whether this is your first job or your fifth, we're here to help. Check out our
                                     website
                                     for more information on how we can help you find your dream job at a high salary!
@@ -260,20 +298,21 @@
                     </div>
 
                     <div class="col-12 col-lg-6 align-self-center d-none d-lg-block js-scroll slide-right">
-                        <img src="assets/images/img/Mask.png" class="w-100">
+                        <img src="assets/images/MaskGroup72x.png" class="w-100">
                     </div>
                 </div>
             </div>
         </div>
-
+        <!-- About Us end -->
     </div>
 
+    <!-- why FinTech section start -->
     <div class="js-scroll why-fintech-section d-none d-md-none d-lg-block"
         style="background-image: url('assets/svgs/Group170.svg'),url('assets/svgs/Group171.svg'),url('assets/images/img/Union2.png');">
         <div class="container text-center pt-5">
             <div class="row py-5 js-scroll fade-in">
-                <div class="col-12 h1 text-white">
-                    Why FinTech ?
+                <div class="col-12 h1 text-white fw-bold">
+                    Why FinTech?
                     <center>
                         <div style="height:6px;width:100px;background-color: #ffffff;" class="rounded mt-3"></div>
                     </center>
@@ -285,10 +324,10 @@
                                 <li class="splide__slide">
                                     <div class="row text-start">
                                         <div class="col-5">
-                                            <div class="h3 text-white py-4">
+                                            <div class="h3 text-white py-4 fw-bold">
                                                 Live Projects
                                             </div>
-                                            <div class="text-white-50">
+                                            <div class="text-white">
                                                 The course will offer learners the advantage to work on live FinTech
                                                 projects designed and developed specifically in our FinVedic labs for
                                                 the
@@ -302,31 +341,53 @@
                                         </div>
                                         <div class="col-1"></div>
                                         <div class="col-6 text-end p-5">
-                                            <img src="assets/images/img/Group.png" class="w-100">
+                                            <img src="assets/images/Group933x.png" class="w-100">
                                         </div>
                                     </div>
                                 </li>
                                 <li class="splide__slide">
                                     <div class="row text-start">
                                         <div class="col-5">
-                                            <div class="h3 text-white py-4">
-                                                Live Projects
+                                            <div class="h3 text-white py-4 fw-bold">
+                                                Specialized Courses
                                             </div>
-                                            <div class="text-white-50">
-                                                The course will offer learners the advantage to work on live FinTech
-                                                projects designed and developed specifically in our FinVedic labs for
-                                                the
-                                                current industry needs by our FinTech experts.
-                                                <br>
-                                                <br>
-                                                Our FinVedic lab is a FinTech
-                                                company in itself designed on SasS platforms to serve thriving financial
-                                                companies.
+                                            <div class="text-white">
+                                                At FinVedic we design courses as per the industry needs. Courses are designed by the FinTech experts working for large scale FinTech companies. Our FinTech courses are designed uniquely to provide the real time exposure.
                                             </div>
                                         </div>
                                         <div class="col-1"></div>
                                         <div class="col-6 text-end p-5">
-                                            <img src="assets/images/img/Group.png" class="w-100">
+                                            <img src="assets/images/Group74752x.png" class="w-100">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="row text-start">
+                                        <div class="col-5">
+                                            <div class="h3 text-white py-4 fw-bold">
+                                                Placement Assistance
+                                            </div>
+                                            <div class="text-white">
+                                                <p class="fs-12 text-white">We have strategically partnered with top FinTech companies and
+                                                    banking global delivery centers to provide placement assistance to the handpick outstanding
+                                                    performance in our course.
+                                                </p>
+                                                <p class="fs-12 text-white"> We coach them rigorously:
+                                                <ol>
+                                                    
+                                                    <li class="fs-12 text-white">Conducting mock interviews,</li>
+                                                    <li class="fs-12 text-white">Guiding them on the upcoming latest FinTech Trends.</li>
+                                                    <li class="fs-12 text-white">Providing insights into the FinTech industry for a closer
+                                                        look.</li>
+                                                    <li class="fs-12 text-white">Creating their portfolios and much more.</li>
+                                                </ol>
+                                                </p>
+                                                <p class="fs-12 text-white">To widen their horizon and launch them in the FinTech industry.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-1"></div>
+                                        <div class="col-6 text-end p-5">
+                                            <img src="assets/images/Group933x.png" class="w-100">
                                         </div>
                                     </div>
                                 </li>
@@ -375,37 +436,40 @@
             <div class="container py-5">
                 <div class="row">
                     <div class="col-12 py-2 js-scroll slide-right">
-                        <img src="assets/images/img/Group_7475.png" class="float-end w-50 ps-2">
-                        <p class="fs-16 fw-bolder text-white">Specialized Courses</p>
-                        <p class="fs-12 text-white-50">At FinVedic we design courses as per the industry needs. Courses
+                        <img src="assets/images/Group74753x.png" class="float-end w-50 ps-2">
+                        <h5 class="fs-16 fw-800 text-white">Specialized Courses</h5>
+                        <p class="fs-12 text-white text-justify">At FinVedic we design courses as per the industry needs. Courses
                             are designed by the FinTech experts working for large scale FinTech companies. Our FinTech
                             courses are designed uniquely to provide the real time exposure.</p>
                     </div>
                     <div class="col-12 py-1 js-scroll slide-left">
-                        <img src="assets/images/img/Group_93.png" class="float-start w-50 pe-2">
-                        <p class="fs-16 fw-bolder text-white">Live Projects</p>
-                        <p class="fs-12 text-white-50">The course will offer learners the advantage to work on live
+                        <img src="assets/images/Group932x.png" class="float-start w-50 pe-2">
+                        <h5 class="fs-16 fw-800 text-white">Live Projects</h5>
+                        <p class="fs-12 text-white text-justify">The course will offer learners the advantage to work on live
                             FinTech projects designed and developed specifically in our FinVedic labs for the current
                             industry needs by our FinTech experts. Our FinVedic lab is a FinTech company in itself
                             designed on SasS
                             platforms to serve thriving financial companies.
                         </p>
                     </div>
-                    <div class="col-12 py-2 js-scroll slide-right">
-                        <img src="assets/images/img/MaskGroup71.png" class="float-end w-50 p-2">
-                        <p class="fs-16 fw-bolder text-white">Placement Assistance</p>
-                        <p class="fs-12 text-white-50">We have strategically partnered with top FinTech companies and
+                    <div class="col-12 py-2 js-scroll slide-right text-justify">
+                        <img src="assets/images/Group932x.png" class="float-end w-50 p-2">
+                        <p class="fs-16 fw-800 text-white">Placement Assistance</p>
+                        <p class="fs-12 text-white">We have strategically partnered with top FinTech companies and
                             banking global delivery centers to provide placement assistance to the handpick outstanding
-                            performance in our course.<br>
+                            performance in our course.
+                        </p>
+                        <p class="fs-12 text-white">
                             We coach them rigorously:
                         <ul>
-                            <li class="fs-12 text-white-50">Conducting mock interviews,</li>
-                            <li class="fs-12 text-white-50">Guiding them on the upcoming latest FinTech Trends.</li>
-                            <li class="fs-12 text-white-50">Providing insights into the FinTech industry for a closer
+                            <li class="fs-12 text-white">Conducting mock interviews,</li>
+                            <li class="fs-12 text-white">Guiding them on the upcoming latest FinTech Trends.</li>
+                            <li class="fs-12 text-white">Providing insights into the FinTech industry for a closer
                                 look.</li>
-                            <li class="fs-12 text-white-50">Creating their portfolios and much more.</li>
+                            <li class="fs-12 text-white">Creating their portfolios and much more.</li>
                         </ul>
-                        <p class="fs-12 text-white-50">To widen their horizon and launch them in the FinTech industry.
+                        </p>
+                        <p class="fs-12 text-white">To widen their horizon and launch them in the FinTech industry.
                         </p>
                         </p>
                     </div>
@@ -414,11 +478,13 @@
         </div>
 
     </div>
+    <!-- why FinTech section end -->
 
+    <!-- Specialized FinTech Courses start -->
     <div class="js-scroll container ">
         <div class="row">
             <div class="col-12">
-                <div class="container h1 text-center">
+                <div class="container h1 text-center fw-bold">
                     Specialized FinTech Courses
                     <center>
                         <div style="height:6px;width:100px;background-color: #585C7B;" class="rounded mt-3"></div>
@@ -431,12 +497,12 @@
                 <div class="card card-hover py-4 hover-2">
                     <div class="card-header">
                         <button class="btn btn-light">
-                            <img src="assets/images/icons/Group 7420.svg">
+                            <img src="assets/images/icons/Group 7420.svg" height="49px">
                         </button>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Payments</h5>
-                        <p class="card-text">Payments Processing, card developers, ,money transfer platforms, and
+                        <h5 class="card-title fw-800">Payments</h5>
+                        <p class="card-text">Payments Processing, card developers, money transfer platforms, and
                             tracking software.</p>
                     </div>
                 </div>
@@ -445,13 +511,13 @@
                 <div class="card card-hover py-4 hover-2">
                     <div class="card-header">
                         <button class="btn btn-light">
-                            <img src="assets/images/icons/Group 7421.svg">
+                            <img src="assets/images/icons/Group 7421.svg" height="49px">
                         </button>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Banking</h5>
+                        <h5 class="card-title fw-800">Banking</h5>
                         <p class="card-text">Digital-first banks or companies digitizing banking services for credit and
-                            debit</p>
+                            debit.</p>
                     </div>
                 </div>
             </div>
@@ -459,11 +525,11 @@
                 <div class="card card-hover py-4 hover-2">
                     <div class="card-header">
                         <button class="btn btn-light">
-                            <img src="assets/images/icons/Group 7419.svg">
+                            <img src="assets/images/icons/Group 7419.svg" height="49px">
                         </button>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Digital Lending</h5>
+                        <h5 class="card-title fw-800">Digital Lending</h5>
                         <p class="card-text">Companies creating new solutions for personal or commercial lending.</p>
                     </div>
                 </div>
@@ -472,11 +538,11 @@
                 <div class="card card-hover py-4 hover-2">
                     <div class="card-header">
                         <button class="btn btn-light">
-                            <img src="assets/images/icons/Group 7417.svg">
+                            <img src="assets/images/icons/Group 7417.svg" height="49px">
                         </button>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Wealth Management</h5>
+                        <h5 class="card-title fw-800">Wealth Management</h5>
                         <p class="card-text">Personal finance tools investment and wealth management platforms, and
                             analytics tools.</p>
                     </div>
@@ -486,11 +552,11 @@
                 <div class="card card-hover py-4 hover-2">
                     <div class="card-header">
                         <button class="btn btn-light">
-                            <img src="assets/images/icons/Group 7413.svg">
+                            <img src="assets/images/icons/Group 7413.svg" height="49px">
                         </button>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Insurance</h5>
+                        <h5 class="card-title fw-800">Insurance</h5>
                         <p class="card-text">Companies selling or distributing insurance digitally or providing data
                             analytics and software for (re) insurence</p>
                     </div>
@@ -499,13 +565,12 @@
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="card card-hover py-4 hover-2">
                     <div class="card-header">
-                        <!-- <img src="assets/images/icons"> -->
                         <button class="btn btn-light">
-                            <i class="fa-solid fa-magnifying-glass fa-3x" style="color:#D946EF"></i>
+                            <i class="fa-solid fa-magnifying-glass fa-3x" style="color:#D946EF;height:49px"></i>
                         </button>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Capital Markets</h5>
+                        <h5 class="card-title fw-800">Capital Markets</h5>
                         <p class="card-text">Sales and trading analysis, and infrastructure tools for financial
                             institutions.</p>
                     </div>
@@ -515,11 +580,11 @@
                 <div class="card card-hover py-4 hover-2">
                     <div class="card-header">
                         <button class="btn btn-light">
-                            <img src="assets/images/icons/Group 7416.svg">
+                            <img src="assets/images/icons/Group 7416.svg" height="49px">
                         </button>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">SMB</h5>
+                        <h5 class="card-title fw-800">SMB</h5>
                         <p class="card-text">Companies focused on providing solutions to small and medium-sized
                             business.</p>
                     </div>
@@ -529,20 +594,21 @@
                 <div class="card card-hover py-4 hover-2">
                     <div class="card-header">
                         <button class="btn btn-light">
-                            <img src="assets/images/icons/Group 7418.svg">
+                            <img src="assets/images/icons/Group 7418.svg" height="49px">
                         </button>
-
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Real Estate</h5>
+                        <h5 class="card-title fw-800">Real Estate</h5>
                         <p class="card-text">Mortagage lending, Transaction digitization, and finance platforms.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- Specialized FinTech Courses end -->
 
-    <div class="js-scroll container-fluid">
+    <!-- R&D Lab start -->
+    <div class="js-scroll container-fluid mainlab-section" style="background-image:  linear-gradient(white,white,white,white,white,white, #585C7B,#585C7B,#585C7B,#585C7B,#585C7B,white,white, white);">
         <div class="row d-none d-lg-block">
             <div class="col-12">
                 <div class="container h1 text-center">
@@ -553,11 +619,7 @@
                 </div>
             </div>
         </div>
-        <div class="w-100 py-5" style="position:relative;">
-            <img class="w-100 h-100  d-lg-block d-none" src="assets/images/img/Group 160.png"
-                style="position: absolute;top:0;left: 0;right:0;z-index:-1">
-            <img class="w-100 h-100  d-lg-none d-block" src="assets/images/img/Group7480.png"
-                style="position: absolute;top:0;left: 0;right:0;z-index:-1">
+        <div class="w-100 py-5 lab-section" style="position:relative;">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-12 col-lg-6">
@@ -572,56 +634,40 @@
                             you will need to work for FinTech. This facilitates to work on tailor-made FinTech
                             Environment.
                         </p>
-                        <ui>
-                            <li class="text-white js-scroll slide-left">
+                        <ul class="lh-xl" style='list-style-image: url("./listType.svg")'>
+                            <li class="text-white js-scroll slide-left lh-xl">
                                 Opportunity to work on FinTech Infrastructure.</li>
-                            <li class="text-white js-scroll slide-right">To demonstrate and practice the learning, we
+                            <li class="text-white js-scroll slide-right lh-xl">
+                                To demonstrate and practice the learning, we
                                 provide Lab Assignments and conduct Workshops.</li>
-                            <li class="text-white js-scroll slide-left">Opportunity to participate on Tech Hackathon.
+                            <li class="text-white js-scroll slide-left lh-xl">
+                                Opportunity to participate on Tech Hackathon.
                             </li>
-                            <li class="text-white js-scroll slide-right">
+                            <li class="text-white js-scroll slide-right lh-xl">
                                 Access to library of FinVedic eLearning modules.
                             </li>
-                            <li class="text-white js-scroll slide-left">
+                            <li class="text-white js-scroll slide-left lh-xl">
                                 24X7 Access to FinVedic labs for a period 1
                                 year .
                             </li>
-                        </ui>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="w-100 py-5" style="position:relative;margin-top: -80px">
-            <img class="w-100 h-100 d-lg-block d-none" src="assets/images/img/Group 168.png"
-                style="position: absolute;top:0;left: 0;right:0;z-index:-1">
-            <img class="w-100 h-100 d-lg-none d-block" src="assets/images/img/Group 168.png"
-                style="position: absolute;top:0;left: 0;right:0;z-index:-1">
+        <div class="w-100 py-5 Excellence-section" style="position:relative;margin-top: -50px">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-12 col-lg-6 py-5">
-                        <h1 class="text-white py-5 js-scroll fade-in">R&D Lab</h1>
-                        <p class="text-white js-scroll slide-left">The access to our labs provided with preconfigured
-                            Virtual Machines with
-                            all
-                            the specific tools
-                            you will need to work for FinTech. This facilitates to work on tailor-made FinTech
-                            Environment.
-                        </p>
-                        <ui>
-                            <li class="text-white js-scroll slide-right">
-                                Opportunity to work on FinTech Infrastructure.</li>
-                            <li class="text-white js-scroll slide-left">To demonstrate and practice the learning, we
-                                provide Lab Assignments and conduct Workshops.</li>
-                            <li class="text-white js-scroll slide-right">Opportunity to participate on Tech Hackathon.
-                            </li>
-                            <li class="text-white js-scroll slide-left">
-                                Access to library of FinVedic eLearning modules.
-                            </li>
-                            <li class="text-white js-scroll slide-right">
-                                24X7 Access to FinVedic labs for a period 1
-                                year .
-                            </li>
-                        </ui>
+                        <h1 class="text-white py-5 js-scroll fade-in">FinTech Centre of Excellence</h1>
+                        <ul  class="lh-xl" style='list-style-image: url("./listType.svg")'>
+                            <li class="text-white js-scroll slide-right">Internship on Live Projects</li>
+                            <li class="text-white js-scroll slide-left"> Opportunity to work on Low Latency as well as High Frequency SaaS applications. </li>
+                            <li class="text-white js-scroll slide-right">Exposure to FinTech IT Setup. </li>
+                            <li class="text-white js-scroll slide-left"> Exposure to Industry standard application development lifecycles. </li>
+                            <li class="text-white js-scroll slide-right">Practicing Agile Delivery methodology </li>
+                            <li class="text-white js-scroll slide-right">Mentorship from FinTech industry experts </li>
+                        </ul>
                     </div>
                     <div class="col-12 col-md-12 col-lg-6">
 
@@ -630,12 +676,14 @@
             </div>
         </div>
     </div>
+    <!-- R&D Lab end -->
 
+    <!-- learning path section start -->
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-9">
                 <div class="text-center py-5 js-scroll fade-in-up">
-                    <h1>Learning Path</h1>
+                    <h1 class="fw-bold">Learning Path</h1>
                     <center>
                         <div style="height:6px;width:100px;background-color: #585C7B;" class="rounded mt-3"></div>
                         <div class="col-12 col-lg-7">
@@ -727,12 +775,14 @@
             </div>
         </div>
     </div>
+    <!-- learning path section end -->
 
+    <!-- Our Placement Assistance Services start -->
     <div class="js-scroll container-fluid placement-section my-5"
         style="background-image: url('assets/images/img/Group7466.png');"">
         <div class=" container py-5">
         <div class="row justify-content-center px-3">
-            <div class="col-12 h1 text-center text-white js-scroll fade-in">
+            <div class="col-12 h1 text-center text-white js-scroll fade-in fw-bold">
                 Our Placement Assistance Services
                 <center>
                     <div style="width:100px;height:5px" class="bg-white rounded my-3"></div>
@@ -744,12 +794,12 @@
                         <img class="w-100 placement-img" src="assets/images/img/MaskGroup41.png">
                     </div>
                     <div class="col-12 col-md-6 col-lg-6 text-center p-4 ">
-                        <h1 class="text-white js-scroll slide-right">
+                        <h2 class="text-white js-scroll slide-right">
                             Corporate &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        </h1>
-                        <h1 class=" text-white js-scroll slide-left">
+                        </h2>
+                        <h2 class=" text-white js-scroll slide-left">
                             Partnership
-                        </h1>
+                        </h2>
                         <p class=" text-white js-scroll slide-right">
                             Our corporate partnerships with businesses give you access to real-world projects and
                             the chance to land interviews with these fintech gaints.
@@ -763,12 +813,12 @@
                         <img class="w-100 placement-img-x" src="assets/images/img/MaskGroup42.png">
                     </div>
                     <div class="col-12 col-md-6 col-lg-6 text-center p-4">
-                        <h1 class=" text-white js-scroll slide-right">
-                            Mock &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        </h1>
-                        <h1 class=" text-white js-scroll slide-left">
+                        <h2 class=" text-white js-scroll slide-right">
+                            Mock &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </h2>
+                        <h2 class=" text-white js-scroll slide-left">
                             Interviews
-                        </h1>
+                        </h2>
                         <p class=" text-white js-scroll slide-right">
                             By giving you all the necessary tools, training, support and mock interviews, we will
                             get you ready for all you interview.
@@ -785,12 +835,12 @@
                         <img class="w-100 placement-img" src="assets/images/img/MaskGroup43.png">
                     </div>
                     <div class="col-12 col-md-6 col-lg-6 text-center p-4">
-                        <h1 class="text-white js-scroll slide-right">
-                            Resume &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        </h1>
-                        <h1 class=" text-white js-scroll slide-left">
+                        <h2 class="text-white js-scroll slide-right">
+                            Resume &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </h2>
+                        <h2 class=" text-white js-scroll slide-left">
                             Services
-                        </h1>
+                        </h2>
                         <p class=" text-white js-scroll slide-right">
                             We also provide resume services that will position your resume so that it stands out
                             from the competition and gives you the best chance of being chosen in the Fintech world
@@ -805,12 +855,12 @@
                         <img class="w-100 placement-img" src="assets/images/img/MaskGroup44.png">
                     </div>
                     <div class="col-12 col-md-6 col-lg-6 text-center p-4">
-                        <h1 class="text-white js-scroll slide-right">
-                            Mentorship &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        </h1>
-                        <h1 class=" text-white js-scroll slide-left">
+                        <h2 class="text-white js-scroll slide-right">
+                            Mentorship &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </h2>
+                        <h2 class=" text-white js-scroll slide-left">
                             by Experts
-                        </h1>
+                        </h2>
                         <p class=" text-white js-scroll slide-right">
                             We will provide you with training with the assistance of industry experts so that you
                             can experience the fintech sector firsthand and better understand it.
@@ -825,15 +875,17 @@
     </div>
 
     </div>
+    <!-- Our Placement Assistance Services end -->
 
+    <!-- Course Curriculum start -->
     <div class="js-scroll container py-5 my-5" style="border-radius: 10px;background-color: #F3F6FF;">
         <div class="row justify-content-center">
-            <div class="col-12 text-center">
-                <h1>Course Curriculum</h1>
+            <div class="col-12 text-center ">
+                <h1 class="fw-bold">Course Curriculum</h1>
                 <center>
                     <div style="height:6px;width:100px;background-color: #585C7B;" class="rounded my-3"></div>
                 </center>
-                <h4 style="color:#6366F1">What You I learn (FINTECH CORE)</h4>
+                <h4 style="color:#6366F1">What You I learn (FinTech Core)</h4>
             </div>
             <div class="col-12 col-md-12 col-lg-9">
                 <div class="row pt-5 " id="accordion">
@@ -863,12 +915,12 @@
                                     <div class="col-6 col-md-3 col-lg-3">
                                         <img src="assets/images/img/Rectangle216.png" class="w-100">
                                     </div>
-                                    <div class="col-6 col-md-3 col-lg-3 fs-4 d-block d-md-none ">
+                                    <div class="col-6 col-md-3 col-lg-3 fs-4 d-block d-md-none fw-bolder">
                                         Introduction to BFSI & FINTECH
                                     </div>
                                     <div class="col-12 col-md-6 col-lg-6">
                                         <dl>
-                                            <dt class="js-scroll slide-right">Introduction to BFSI & FINTECH</dt>
+                                            <dd class="js-scroll slide-right fw-bold d-none d-lg-block">Introduction to BFSI & FINTECH</dd>
                                             <dd class="js-scroll slide-left"><i
                                                     class="fa-solid fa-right-long"></i>&nbsp; Modern Banking Landscape
                                             </dd>
@@ -917,12 +969,12 @@
                                     <div class="col-6 col-md-3 col-lg-3">
                                         <img src="assets/images/img/Rectangle216.png" class="w-100">
                                     </div>
-                                    <div class="col-6 col-md-3 col-lg-3 fs-4 d-block d-md-none ">
+                                    <div class="col-6 col-md-3 col-lg-3 fs-4 d-block d-md-none fw-bolder">
                                         Introduction to BFSI & FINTECH
                                     </div>
                                     <div class="col-12 col-md-6 col-lg-6">
                                         <dl>
-                                            <dt class="js-scroll slide-right">Introduction to BFSI & FINTECH</dt>
+                                            <dd class="js-scroll slide-right fw-bold d-none d-lg-block">Introduction to BFSI & FINTECH</dd>
                                             <dd class="js-scroll slide-left"><i
                                                     class="fa-solid fa-right-long"></i>&nbsp; Modern Banking Landscape
                                             </dd>
@@ -971,12 +1023,12 @@
                                     <div class="col-6 col-md-3 col-lg-3">
                                         <img src="assets/images/img/Rectangle216.png" class="w-100">
                                     </div>
-                                    <div class="col-6 col-md-3 col-lg-3 fs-4 d-block d-md-none ">
+                                    <div class="col-6 col-md-3 col-lg-3 fs-4 d-block d-md-none fw-bolder">
                                         Introduction to BFSI & FINTECH
                                     </div>
                                     <div class="col-12 col-md-6 col-lg-6">
                                         <dl>
-                                            <dt class="js-scroll slide-right">Introduction to BFSI & FINTECH</dt>
+                                            <dd class="js-scroll slide-right fw-bold d-none d-lg-block">Introduction to BFSI & FINTECH</dd>
                                             <dd class="js-scroll slide-left"><i
                                                     class="fa-solid fa-right-long"></i>&nbsp; Modern Banking Landscape
                                             </dd>
@@ -1025,12 +1077,12 @@
                                     <div class="col-6 col-md-3 col-lg-3">
                                         <img src="assets/images/img/Rectangle216.png" class="w-100">
                                     </div>
-                                    <div class="col-6 col-md-3 col-lg-3 fs-4 d-block d-md-none ">
+                                    <div class="col-6 col-md-3 col-lg-3 fs-4 d-block d-md-none fw-bolder">
                                         Introduction to BFSI & FINTECH
                                     </div>
                                     <div class="col-12 col-md-6 col-lg-6">
                                         <dl>
-                                            <dt class="js-scroll slide-right">Introduction to BFSI & FINTECH</dt>
+                                            <dd class="js-scroll slide-right fw-bold d-none d-lg-block">Introduction to BFSI & FINTECH</dd>
                                             <dd class="js-scroll slide-left"><i
                                                     class="fa-solid fa-right-long"></i>&nbsp; Modern Banking Landscape
                                             </dd>
@@ -1061,7 +1113,11 @@
             </div>
         </div>
     </div>
+    <!-- Course Curriculum end -->
 
+    <div class="js-scroll container-fluid finvedic-section"></div>
+
+    <!-- Our Success Stories section start -->
     <div class="container py-5">
         <div class="row px-4 align-items-center">
             <div class="col-12 gx-3 col-md-12 col-lg-5 px-3 h-100 js-scroll slide-left">
@@ -1251,12 +1307,9 @@
             </div>
         </div>
     </div>
-
-    <div class="js-scroll container-fluid">
-        <img src="assets/images/img/Component181.png" class="w-100">
-    </div>
-
-    <div class="container">
+    <!-- Our Success Stories section end -->
+    <!-- Our Instructors' Industry Background start -->
+    <!-- <div class="container">
         <div class="row py-5 justify-content-center g-3">
             <div class="col-12 text-center js-scroll">
                 <h1>Our Instructors' Industry Background</h1>
@@ -1298,9 +1351,11 @@
             </div>
 
         </div>
-    </div>
+    </div> -->
+    <!-- Our Instructors' Industry Background end -->
 
-    <div class="js-scroll container-fluid"
+    <!-- about fintech section start -->
+    <div class="js-scroll container-fluid about-fintech-section"
         style="background-image: linear-gradient(to bottom,white 50% , #131022 50%);">
         <div class="container-fluid about-section py-5"
             style="background-image:url('assets/images/img/Subtraction6.png');">
@@ -1320,12 +1375,12 @@
                     <div class="col-12 col-md-10 col-lg-7 text-white h2 py-4 js-scroll slide-left">
                         The Fintech 250: <br>The most promising fintech companies of 2022
                         <br>
-                        <p class="text-white fs-14 py-3">Source:
-                            <a class="text-white text-decoration-none" target="_blank"
-                                href="https://www.cbinsights.com/research/report/top-fintech-startups-2022">www.cbinsights.com/research/report/top-fintech-startups-2022</a>
+                        <p class="text-white fs-14 py-3 text-white-50">Source:
+                            <a class="text-decoration-none" target="_blank"
+                                href="https://www.cbinsights.com/research/report/top-fintech-startups-2022"><i class="text-white fs-12">www.cbinsights.com/research/report/top-fintech-startups-2022</i></a>
                         </p>
                     </div>
-                    <div class="col-12 js-scroll">
+                    <div class="col-12 js-scroll d-none d-md-none d-lg-block">
                         <section class="splide splideOne" aria-labelledby="carousel-heading">
                             <div class="splide__track">
                                 <ul class="splide__list">
@@ -1369,11 +1424,16 @@
                             });
                         </script>
                     </div>
+                    <div class="col-12 js-scroll d-block d-md-block d-lg-none">
+                        <img src="assets/images/Group74953x.png" class="w-100">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
+    <!-- about fintech section end -->
+    
+    <!-- footer section start -->
     <div class="container-fluid footer-section">
         <div class="container py-5">
             <div class="row justify-content-center">
@@ -1424,9 +1484,11 @@
             <p class="fs-12 text-white">All Rights Reserved @ FinVedic 2023</p>
         </div>
     </div>
+    <!-- footer section end -->
 
 </body>
 <script src="assets/js/bootstrap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
 <script>
     function GetToggle(Btn) {
         if (Btn == 'm1-up' || Btn == 'm2-up' || Btn == 'm3-up' || Btn == 'm4-up') {
@@ -1481,7 +1543,6 @@
         }
     }
     const scrollElements = document.querySelectorAll(".js-scroll");
-    console.log(scrollElements);
 
     const elementInView = (el, dividend = 1) => {
         const elementTop = el.getBoundingClientRect().top;
@@ -1520,6 +1581,18 @@
     window.addEventListener("scroll", () => {
         handleScrollAnimation();
     });
+    const $navbar = $('.navbar');
+        $('a[href^="#"]').on('click', function(e) {
+           e.preventDefault();
+            if(screen.width < 992 ){
+                const scrollTop = $($(this).attr('href')).position().top - ($navbar.outerHeight()+60);
+                $('html, body').animate({ scrollTop },100);
+                }
+                else{
+                    const scrollTop = $($(this).attr('href')).position().top - ($navbar.outerHeight()+60);
+                    $('html, body').animate({ scrollTop },100);
+                    }
+                });
 </script>
 
 </html>
