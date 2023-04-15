@@ -3,6 +3,10 @@
     color: #281C45;
     font-size: 13px;
 }
+body{
+    width:100%;
+    overflow-x: hidden;
+}
 
 .text-justify{
     text-align: justify;
@@ -30,6 +34,7 @@
     font-size: 16px;
 }
 
+
 .fs-20 {
     font-size: 20px;
 }
@@ -39,8 +44,8 @@
 }
 
 .container {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
 }
 
 .container-fluid {
@@ -440,16 +445,16 @@ dd i {
     }
     .about-section {
         background-repeat: no-repeat;
-        background-size: 250% 100%;
+        background-size: 300% 100%;
         background-position: top;
-        z-index: 0;
+        z-index: -1;
     }
 
 }
 
 @media screen and (max-width: 767px) {
     .header-section{
-        height:90vh!important;
+        height:80vh!important;
     }
     .join-btn {
         background-color: #ffffff !important;
@@ -499,6 +504,6 @@ dd i {
         background-repeat: no-repeat;
         background-size: 250% 90%;
         background-position: top;
-        z-index: 0;
+        z-index: -1;
     }
 }
