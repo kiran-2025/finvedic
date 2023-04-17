@@ -194,6 +194,12 @@ body{
     100% {}
 }
 
+.modal-content{
+    border: 2px solid #6366F1!important;
+    max-width: 350px;
+    margin: auto;
+}
+
 
 .why-fintech-section {
     background-size: 200px 300px,200px 400px,100% 100% ;
@@ -223,6 +229,23 @@ body{
     display: flex;
     justify-content: center;
     padding: 10px;
+    position:relative;
+}
+.step-line{
+    position: absolute;
+    height:75px;
+    width:1px;
+    top:100%;
+    border:1px solid #f8f9ff;
+    z-index:-1;
+}
+.step-line-2{
+    position: absolute;
+    height:75px;
+    width:1px;
+    top:-90%;
+    border:1px solid #f8f9ff;
+    z-index:-1;
 }
 
 .step-btn-2 {
@@ -412,6 +435,12 @@ dd i {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+    .header-section{
+        height:100vh!important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
     .border-lg {
         border: 2px solid white;
         border-radius: 10px;
@@ -449,12 +478,24 @@ dd i {
         background-position: top;
         z-index: -1;
     }
+    
+.why-fintech-section {
+    background-size: 200px 300px,200px 400px,200% 100% ;
+    background-position: left top,bottom right,top;
+    background-repeat: no-repeat,no-repeat , no-repeat;
+}
+.life-svg {
+    top: -50px;
+}
 
 }
 
 @media screen and (max-width: 767px) {
     .header-section{
         height:80vh!important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
     .join-btn {
         background-color: #ffffff !important;
@@ -502,8 +543,14 @@ dd i {
     }
     .about-section {
         background-repeat: no-repeat;
-        background-size: 250% 90%;
-        background-position: top;
+        background-size: 250% 100%;
+        background-position:right top;
         z-index: -1;
     }
+    
+.why-fintech-section {
+    background-size: 200px 300px,200px 400px,300% 100% ;
+    background-position: left top,bottom right,right top;
+    background-repeat: no-repeat,no-repeat , no-repeat;
+}
 }
