@@ -1,11 +1,17 @@
 * {
-    font-family: 'Raleway', sans-serif;
     color: #281C45;
-    font-size: 13px;
+    font: normal normal medium 16px/19px Raleway;
 }
+
 body{
     width:100%;
     overflow-x: hidden;
+}
+
+.btn-links {
+    padding:10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-decoration:none;
 }
 
 .text-justify{
@@ -84,10 +90,10 @@ body{
 
 .header-section {
     position: relative;
-    height: 100vh;
     z-index:-1;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: top;
     /* background-attachment: fixed; */
     
 }
@@ -113,13 +119,13 @@ body{
 .life-Section {
     position: relative;
     background-color: #f8f9ff;
-    margin-top: -70px;
+    margin-top: -76px;
     z-index:-1;
 }
 
 .life-svg {
     position: absolute;
-    margin-top: -15px;
+    margin-top: -48px;
     left:0;
     right:0;
 }
@@ -234,17 +240,17 @@ body{
 .step-line{
     position: absolute;
     height:75px;
-    width:1px;
+    width:2px;
     top:100%;
-    border:1px solid #f8f9ff;
+    border:2px solid #f8f9ff;
     z-index:-1;
 }
 .step-line-2{
     position: absolute;
     height:75px;
-    width:1px;
+    width:2px;
     top:-90%;
-    border:1px solid #f8f9ff;
+    border:2px solid #f8f9ff;
     z-index:-1;
 }
 
@@ -409,6 +415,17 @@ dd i {
     background-color: #281C45;
     color: white!important;
 }
+@media screen and (min-width: 1920px) {
+    .container {
+        max-width: 1840px;
+    }
+}
+@media screen and (min-width: 1600px) {
+    .container {
+        max-width: 1520px;
+    }
+}
+
 @media screen and (min-width: 992px) {
     .join-btn {
         background-color: #6366F1 !important;
@@ -420,7 +437,7 @@ dd i {
     }
 
     .card-text {
-        font-size: 13px;
+        font-size: 14px;
         color: #585C7B;
     }
 
@@ -436,9 +453,9 @@ dd i {
 
 @media (min-width: 768px) and (max-width: 991px) {
     .header-section{
-        height:100vh!important;
+        height:90vh!important;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: fit;
         background-position: center;
     }
     .border-lg {
@@ -492,7 +509,7 @@ dd i {
 
 @media screen and (max-width: 767px) {
     .header-section{
-        height:80vh!important;
+        height:85vh!important;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -503,7 +520,7 @@ dd i {
     }
 
     .life-svg {
-        top: -30px;
+        top: -08px;
     }
 
     .header-content {
@@ -511,7 +528,7 @@ dd i {
     }
 
     .card-text {
-        font-size: 12px;
+        font-size: 13px;
         color: #585C7B;
     }
 
