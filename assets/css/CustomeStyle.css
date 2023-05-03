@@ -5,7 +5,7 @@
 
 body{
     width:100%;
-    overflow-x: hidden;
+    overflow-x: hidden!important;
 }
 
 .btn-links {
@@ -119,7 +119,7 @@ body{
 .life-Section {
     position: relative;
     background-color: #f8f9ff;
-    margin-top: -76px;
+    margin-top: -86px;
     z-index:-1;
 }
 
@@ -508,6 +508,30 @@ dd i {
 }
 
 @media screen and (max-width: 767px) {
+    .fs-sm-10{
+        font-size: 10px!important;
+    }
+    .fs-sm-12{
+        font-size: 12px!important;
+    }
+    .fs-sm-14{
+        font-size: 14px!important;
+    }
+    .fs-sm-16{
+        font-size: 16px!important;
+    }
+    .fs-sm-20{
+        font-size: 20px!important;
+    }
+    .fs-sm-24{
+        font-size: 24px!important;
+    }
+    .fs-sm-28{
+        font-size: 28px!important;
+    }
+    .fs-sm-36{
+        font-size: 36px!important;
+    }
     .header-section{
         height:85vh!important;
         background-repeat: no-repeat;
