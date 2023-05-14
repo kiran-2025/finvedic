@@ -76,7 +76,7 @@ body{
 }
 
 .dropdown-menu-style {
-    background: rgba(255, 255, 255, 0.8) !important;
+    background: rgba(255, 255, 255, 0.9) !important;
 }
 
 .sign-in-btn {
@@ -90,7 +90,7 @@ body{
 
 .header-section {
     position: relative;
-    z-index:-1;
+    z-index:0;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -108,6 +108,8 @@ body{
 }
 
 .links-btn {
+    width:45px;
+    height:45px;
     background-color: rgba(255, 255, 255, 0.2) !important;
 }
 
@@ -119,8 +121,8 @@ body{
 .life-Section {
     position: relative;
     background-color: #f8f9ff;
-    margin-top: -86px;
-    z-index:-1;
+    margin-top: -26px;
+    z-index:0;
 }
 
 .life-svg {
@@ -139,19 +141,29 @@ body{
     border: none !important;
 }
 
+.card-hover p{
+    display:none;
+}
+.card-hover .btn{
+    display:block;
+    justify-content: center;
+}
+
 .card-hover:hover,
 .card-hover:hover h5,
 .card-hover:hover p {
+    display:block;
     border-radius: 20px;
     color: white !important;
     transition: 2;
     animation: hover-bg 1s;
-
+}
+.card-hover:hover .btn{
+    display:none;
 }
 
 .card-hover:hover {
     animation: slide-down 1s ease-in-out both;
-    /* background: linear-gradient(to left top, #6366F1, #8B5CF6, #D946EF) !important; */
 }
 
 .hover-1 {
@@ -200,6 +212,14 @@ body{
     100% {}
 }
 
+.submit-btn{
+    background: linear-gradient(to left top, #6366F1, #8B5CF6, #D946EF) !important;
+}
+
+.form-background{
+    height:100vh;
+    background: linear-gradient(to right bottom, #6366F1, #8B5CF6, #D946EF) !important;
+}
 .modal-content{
     border: 2px solid #6366F1!important;
     max-width: 350px;
@@ -533,7 +553,7 @@ dd i {
         font-size: 36px!important;
     }
     .header-section{
-        height:85vh!important;
+        height:100vh!important;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -594,4 +614,26 @@ dd i {
     background-position: left top,bottom right,right top;
     background-repeat: no-repeat,no-repeat , no-repeat;
 }
+}
+.heading-text{
+    background: -webkit-linear-gradient(right,#6366F1 , #8B5CF6,#D946EF,#6366F1 , #8B5CF6,#D946EF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+textarea:focus, 
+textarea.form-control:focus, 
+input.form-control:focus, 
+input[type=text]:focus, 
+input[type=password]:focus, 
+input[type=email]:focus, 
+input[type=number]:focus, 
+[type=text].form-control:focus, 
+[type=password].form-control:focus, 
+[type=email].form-control:focus, 
+[type=tel].form-control:focus, 
+[contenteditable].form-control:focus {
+    
+    box-shadow: inset 0 -1px 0 #ddd;
 }

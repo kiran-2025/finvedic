@@ -73,9 +73,10 @@
             transform: scale(1.1);
             transition: 0.25s;
             background-color: red;
+            
             border-radius: 10px 10px 0px 0px;
-            border-bottom: 5px solid #8B5CF6;
-            box-shadow: 0px 4px 5px 0px #8B5CF6;
+            border-bottom: 5px solid #ea63ff;
+            box-shadow: 0px 4px 5px 0px #ea63ff;
         }
 
         .nav.nav-pills .nav-item .nav-link.active img{
@@ -88,7 +89,7 @@
 
         .nav.nav-pills .nav-item .nav-link img {
             width: 70px;
-            height: 70px;
+            /* height: 70px; */
             padding-bottom: 10px;
         }
 
@@ -109,10 +110,10 @@
         }
 
         .finvedic-section {
-            height: 100vh;
-            background-image: url('assets/images/Component1812x.png');
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
+            /* height: 100vh; */
+            /* background-image: url('assets/images/Component1812x.png'); */
+            /* background-repeat: no-repeat; */
+            /* background-size: 100% 100%; */
         }
 
         .finvedic-section:hover {
@@ -163,10 +164,13 @@
                 background-position: center;
                 background-size: 150% 100%;
             }
+            .nav.nav-pills .nav-item .nav-link.active{
+                transform: scale(1.2);
+            }
 
             .nav.nav-pills .nav-item .nav-link img {
-                width: 40px;
-                height: 40px;
+                width: 50px;
+                /* height: 50px; */
             }
         }
 
@@ -198,7 +202,7 @@
                             Cources
                         </a>
                         <ul class="dropdown-menu bordered dropdown-menu-style" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Payments <i class="fa-solid fa-angle-right"></i></a>
+                            <li><a class="dropdown-item" href="Payments.html">Payments <i class="fa-solid fa-angle-right"></i></a>
                             </li>
                             <li><a class="dropdown-item" href="#">Banking <i class="fa-solid fa-angle-right"></i></a>
                             </li>
@@ -225,18 +229,16 @@
                 </ul>
                 <ui class="navbar-nav">
                     <li class="nav-item mx-3">
-                        <button class="btn sign-in-btn rounded my-2">
+                        <a class="btn sign-in-btn rounded my-2" href="signIn.html">
                             <i class="fa-solid fa-arrow-right-from-bracket text-blue"></i>&nbsp;&nbsp; Sign In
-                        </button>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <button class="btn text-white sign-up-btn rounded my-2">
+                        <a class="btn text-white sign-up-btn rounded my-2" href="signUp.html">
                             <i class="fa-regular fa-user text-white"></i>&nbsp;&nbsp;Sign Up
-                        </button>
+                        </a>
                     </li>
                 </ui>
-
-
             </div>
         </div>
     </nav>
@@ -244,11 +246,11 @@
 
     <div class="modal fade" id="navbarModel">
         <div class="modal-dialog modal-sm">
-            <div class="modal-content bg-light">
+            <div class="modal-content bg-light" style="border-radius: 25px;">
                 <div class="modal-head m-4 text-end">
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="d-flex align-items-start" style="height:80vh">
+                <div class="d-flex align-items-start" style="height:80vh;overflow-y: auto;">
                     <ul class="navbar-nav mx-auto mt-4 mb-lg-0">
                         <li class="nav-item h5">
                             <a class="nav-link active" aria-current="page" href="#">About Us</a>
@@ -310,20 +312,24 @@
         <div class="container-fluid header-content">
             <div class="container pb-5">
                 <div class="row h-100 py-5 animate__animated animate__slideInLeft">
-                    <div class="col-12 col-lg-6 text-white py-sm-4 py-md-5 py-lg-5">
-                        <p class="display-4 text-white fw-normal fs-sm-28">
+                    <div class="col-12 text-center display-3 fw-bold text-white">
+                        “Join, Learn and<br> Accelerate”
+                    </div>
+                    <div class="col-12 col-lg-6 text-white py-sm-4 py-md-5 py-lg-5 fs-1">
+                        <p class=" text-white fw-normal fs-sm-20">
                             The FinTech Industry<br> employs over
-                            <span class="display-5 text-white" style="font-weight: 900;">3,00,000 <br>people
+                            <span class=" text-white fs-sm-20" style="font-weight: 900;">3,00,000 <br>people
                                 worldwide</span>
                         </p>
                     </div>
                     <div class="col-12  my-4">
-                        <button class="btn join-btn shadow px-5 ">
-                            Join Our NewsLetter
-                        </button>
+                        <p class="text-white fs-sm-12">Join us to start your journey in FinTech</p>
+                        
+                        <a class="btn join-btn shadow px-5" href="contactUs.html">
+                            Download Broacher
+                        </a>
                     </div>
-                    <div class="col-12 pt-5 mb-5 d-none d-lg-block animate__animated animate__headShake"
-                        style="margin-top:150px">
+                    <div class="col-12 pt-5 mb-5 d-none d-lg-block animate__animated animate__headShake">
                         <button class="btn rounded-circle links-btn">
                             <i class="fa-brands fa-linkedin-in text-white"></i>
                         </button>
@@ -342,15 +348,9 @@
         </div>
     </div>
     <!-- header section ends -->
-    <div class="row align-items-center container-fluid " style="z-index:9999;">
-        <div class="col-12 text-center pb-5">
-            <a class="btn rounded-circle shadow bg-white" aria-current="page" href="#Professional">
-                <i class="fa-solid fa-chevron-down"></i>
-            </a>
-        </div>
-    </div>
+    
 
-    <div class="w-100 life-Section pt-5" id="Professional">
+    <div class="w-100 life-Section" id="Professional">
         <svg xmlns="http://www.w3.org/2000/svg" width="100%" class="life-svg" viewBox="0 0 1921.496 1201.249">
             <g id="Group_88" data-name="Group 88" transform="translate(8.496 -835.752)">
                 <rect id="Rectangle_108" data-name="Rectangle 108" width="1920" height="470"
@@ -360,8 +360,16 @@
                     transform="translate(-8.496 835.752)" fill="#f8f9ff" />
             </g>
         </svg>
+        
         <!-- Life as a FinVedic Professional start -->
         <div class="container js-scroll fade-in-bottom">
+            <div class="row align-items-center container-fluid justify-content-center">
+                <div class="col-12 text-center pb-4">
+                    <a class="btn rounded-circle shadow bg-white" aria-current="page" href="#Professional">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                </div>
+            </div>
             <div class="fs-16 text-center pt-4 pb-5 row justify-content-center">
                 <div class="col-12 col-md-12 col-lg-8 fw-bold fs-sm-14">
                     As the world of finance and technology continues to evolve and change, so does the
@@ -511,8 +519,8 @@
                         <div class="splide__track">
                             <ul class="splide__list ">
                                 <li class="splide__slide" data-splide-interval="3000">
-                                    <div class="row text-start px-2">
-                                        <div class="col-12 col-md-12 col-lg-6 text-end d-block d-md-block d-lg-none">
+                                    <div class="row text-start px-2 align-items-center">
+                                        <div class="col-12 col-md-12 col-lg-6 text-end px-lg-5 px-sm-0">
                                             <img src="assets/images/Live_Projects.png" class="w-100 "
                                                 style="border-radius: 10px;">
                                         </div>
@@ -521,29 +529,15 @@
                                                 Live Projects
                                             </div>
                                             <div class="text-white fs-sm-12">
-                                                <!-- The course will offer learners the advantage to work on live FinTech
-                                                projects designed and developed specifically in our FinVedic labs for
-                                                the
-                                                current industry needs by our FinTech experts.
-                                                <br>
-                                                <br>
-                                                Our FinVedic lab is a FinTech
-                                                company in itself designed on SasS platforms to serve thriving financial
-                                                companies. -->
                                                 FinTech experts developed our FinVedic labs, which is a company in
                                                 itself, serving thriving financial company.
                                             </div>
                                         </div>
-                                        <div class="col-lg-1"></div>
-                                        <div class="col-12 col-md-12 col-lg-6 text-end p-4 d-none d-md-none d-lg-block">
-                                            <img src="assets/images/Live_Projects.png" class="w-100"
-                                                style="border-radius: 10px;">
-                                        </div>
                                     </div>
                                 </li>
                                 <li class="splide__slide" data-splide-interval="3000">
-                                    <div class="row text-start px-2">
-                                        <div class="col-12 col-md-12 col-lg-6 text-end d-block d-md-block d-lg-none">
+                                    <div class="row text-start px-2 align-items-center">
+                                        <div class="col-12 col-md-12 col-lg-6 text-end px-lg-5 px-sm-0">
                                             <img src="assets/images/Specialized_Courses.png" class="w-100"
                                                 style="border-radius: 10px;">
                                         </div>
@@ -552,23 +546,14 @@
                                                 Specialized Courses
                                             </div>
                                             <div class="text-white fs-sm-12">
-                                                <!-- At FinVedic we design courses as per the industry needs. Courses are
-                                                designed by the FinTech experts working for large scale FinTech
-                                                companies. Our FinTech courses are designed uniquely to provide the real
-                                                time exposure. -->
                                                 Courses designed by FinTech industry experts for real time exposure.
                                             </div>
-                                        </div>
-                                        <div class="col-lg-1"></div>
-                                        <div class="col-12 col-md-12 col-lg-6 text-end p-4 d-none d-md-none d-lg-block">
-                                            <img src="assets/images/Specialized_Courses.png" class="w-100"
-                                                style="border-radius: 10px;">
                                         </div>
                                     </div>
                                 </li>
                                 <li class="splide__slide" data-splide-interval="3000">
-                                    <div class="row text-start px-2">
-                                        <div class="col-12 col-md-12 col-lg-6 d-block d-md-block d-lg-none">
+                                    <div class="row text-start px-2 align-items-center">
+                                        <div class="col-12 col-md-12 col-lg-6 px-lg-5 px-sm-0">
                                             <img src="assets/images/Placement_Assistance.png" class="w-100"
                                                 style="border-radius: 10px;">
                                         </div>
@@ -578,11 +563,6 @@
                                             </div>
                                             <div class="text-white">
                                                 <p class="text-white fs-sm-12">
-                                                    <!-- We have strategically partnered with top
-                                                    FinTech companies and
-                                                    banking global delivery centers to provide placement assistance to
-                                                    the handpick outstanding
-                                                    performance in our course. -->
                                                     Strategically partnered with top FinTech companies and
                                                     banking global delivery centers placement assistance
                                                 </p>
@@ -596,17 +576,12 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="col-1"></div>
-                                        <div class="col-12 col-md-12 col-lg-6 text-end p-4 d-none d-md-none d-lg-block">
-                                            <img src="assets/images/Placement_Assistance.png" class="w-100"
-                                                style="border-radius: 10px;">
-                                        </div>
                                     </div>
                                 </li>
                             </ul>
                         </div>
                         <div class="splide__arrows splide__arrows--ltr d-none d-md-none d-lg-block"
-                            style="position: absolute;bottom: 15%;left:5%">
+                            style="position: absolute;bottom: 15%;right:15%">
                             <button class="splide__arrow splide__arrow--next shadow" type="button"
                                 aria-label="Next slide" aria-controls="splide01-track">
                                 <i class="fa-solid fa-angle-left"></i>
@@ -651,7 +626,7 @@
         <div class="row text-center courses-section-scroll py-5">
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="card card-hover py-4 hover-2">
-                    <div class="card-header">
+                    <div class="card-header d-flex justify-content-center">
                         <button class="btn btn-light">
                             <img src="assets/images/icons/Group 7420.svg" height="49px">
                         </button>
@@ -665,8 +640,8 @@
             </div>
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="card card-hover py-4 hover-2">
-                    <div class="card-header">
-                        <button class="btn btn-light">
+                    <div class="card-header d-flex justify-content-center">
+                        <button class="btn btn-light ">
                             <img src="assets/images/icons/Group 7421.svg" height="49px">
                         </button>
                     </div>
@@ -678,8 +653,8 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-3">
-                <div class="card card-hover py-4 hover-2">
-                    <div class="card-header">
+                <div class="card card-hover py-4 hover-2 ">
+                    <div class="card-header  d-flex justify-content-center">
                         <button class="btn btn-light">
                             <img src="assets/images/icons/Group 7419.svg" height="49px">
                         </button>
@@ -692,7 +667,7 @@
             </div>
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="card card-hover py-4 hover-2">
-                    <div class="card-header">
+                    <div class="card-header  d-flex justify-content-center">
                         <button class="btn btn-light">
                             <img src="assets/images/icons/Group 7417.svg" height="49px">
                         </button>
@@ -706,7 +681,7 @@
             </div>
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="card card-hover py-4 hover-2">
-                    <div class="card-header">
+                    <div class="card-header  d-flex justify-content-center">
                         <button class="btn btn-light">
                             <img src="assets/images/icons/Group 7413.svg" height="49px">
                         </button>
@@ -720,7 +695,7 @@
             </div>
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="card card-hover py-4 hover-2">
-                    <div class="card-header">
+                    <div class="card-header  d-flex justify-content-center">
                         <button class="btn btn-light">
                             <i class="fa-solid fa-magnifying-glass fa-3x" style="color:#D946EF;height:49px"></i>
                         </button>
@@ -734,7 +709,7 @@
             </div>
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="card card-hover py-4 hover-2">
-                    <div class="card-header">
+                    <div class="card-header  d-flex justify-content-center">
                         <button class="btn btn-light">
                             <img src="assets/images/icons/Group 7416.svg" height="49px">
                         </button>
@@ -748,7 +723,7 @@
             </div>
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="card card-hover py-4 hover-2">
-                    <div class="card-header">
+                    <div class="card-header  d-flex justify-content-center">
                         <button class="btn btn-light">
                             <img src="assets/images/icons/Group 7418.svg" height="49px">
                         </button>
@@ -768,7 +743,7 @@
         style="background-image:  linear-gradient(white,white,white,white,white,white, #585C7B,#585C7B,#585C7B,#585C7B,#585C7B,white,white, white);">
         <div class="row d-none d-lg-block">
             <div class="col-12">
-                <div class="container h1 text-center">
+                <div class="container h1 text-center fw-bold">
                     Finvedic Labs
                     <center>
                         <div style="height:6px;width:100px;background-color: #585C7B;" class="rounded mt-3"></div>
@@ -779,18 +754,9 @@
         <div class="w-100 py-5 lab-section" style="position:relative;">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-12 col-lg-6">
-
-                    </div>
                     <div class="col-12 col-md-12 col-lg-6 py-5 my-5">
-                        <h1 class="text-white py-5  js-scroll slide-left">R&D Lab</h1>
+                        <h1 class="text-white py-sm-0 py-lg-5 js-scroll slide-left">R&D Lab</h1>
                         <p class="text-white js-scroll slide-right fs-sm-12">
-                            <!-- The access to our labs provided with preconfigured
-                            Virtual Machines with
-                            all
-                            the specific tools
-                            you will need to work for FinTech. This facilitates to work on tailor-made FinTech
-                            Environment. -->
                             Preconfigured Virtual Labs for tailor made Fintech Environment.
                         </p>
                         <ul style='list-style-image: url("./listType.svg")'>
@@ -803,6 +769,20 @@
                                 modules</li>
                             <li class="text-white js-scroll slide-left py-2 fs-sm-12">24X7: FinVedic labs: 1 year access
                             </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-6 py-5 my-5 d-none d-md-block">
+                        <h1 class="text-white py-5  js-scroll fade-in fs-sm-24">FinTech Centre of Excellence</h1>
+                        <ul style='list-style-image: url("./listType.svg")'>
+                            <li class="text-white py-2 js-scroll slide-right fs-sm-12">Internship on Live Projects</li>
+                            <li class="text-white py-2 js-scroll slide-left fs-sm-12">work on Low Latency as well as
+                                High Frequency SaaS applications</li>
+                            <li class="text-white py-2 js-scroll slide-right fs-sm-12">FinTech IT Setup</li>
+                            <li class="text-white py-2 js-scroll slide-left fs-sm-12">Industry standard application
+                                development lifecycles</li>
+                            <li class="text-white py-2 js-scroll slide-right fs-sm-12">Agile Delivery methodology </li>
+                            <li class="text-white py-2 js-scroll slide-left fs-sm-12">Mentorship from FinTech industry
+                                experts</li>
                         </ul>
                     </div>
                 </div>
@@ -845,7 +825,7 @@
                         <div class="col-12 col-lg-7">
                             <p class="pt-4 fs-sm-12">
                                 We offer blended learning where you will attend live training sessions to go over the
-                                in-depth theoretical concepts that are supported by Realtime projects
+                                in-depth theoretical concepts that are supported by Realtime projects.
                             </p>
                         </div>
                     </center>
@@ -867,7 +847,7 @@
                     </div>
                     <div class="col-1 d-none d-lg-block"></div>
                     <div class="col-3 h5 fs-sm-16">
-                        Theoretical virtual class
+                        Theoretical Virtual Classes
                     </div>
                 </div>
                 <div class="row py-4 align-items-center justify-content-center js-scroll fade-in-up">
@@ -888,7 +868,7 @@
                     </div>
                     <div class="col-1 d-none d-lg-block"></div>
                     <div class="col-3 h5 fs-sm-16">
-                        Labs-Exclusively designed
+                        Labs-Exclusively Designed
                     </div>
                 </div>
                 <div class="row py-4 align-items-center justify-content-center js-scroll fade-in-up">
@@ -935,7 +915,7 @@
             </div>
             <div class="col-12 col-lg-6 text-center fw-bolder js-scroll slide-right">
                 <p class="pt-4 fs-sm-12">
-                    We provide certification from a renowned university, which will put you ahead of the completion in
+                    We provide certification from a renowned university, which will put you ahead of the competition in
                     the job market.
                 </p>
             </div>
@@ -1084,7 +1064,6 @@
                         <button class="nav-link active w-100 h-100 text-center" data-bs-toggle="tab"
                             data-bs-target="#tabone" type="button" role="tab" aria-controls="tabone">
                             <img src="assets/images/16.png">
-                            <br>
                             <p class="fs-sm-12 d-none d-md-block">FinTech & Finacial Services Landscape</p>
                         </button>
                     </li>
@@ -1597,20 +1576,21 @@
                 </div>
             </div> -->
             <div class="col-12 text-center">
-                <button class="btn btn-info text-white px-5" style="background: #6366F1;">Download Broucher</button>
+                <a class="btn btn-info text-white px-5" href="broucher.html" style="background: #6366F1;">Download Broucher</a>
             </div>
         </div>
     </div>
     <!-- Course Curriculum end -->
     <div class="container-fluid">
         <div class="js-scroll container-fluid finvedic-section">
+            <img src="assets/images/Component1812x.png" class="w-100 d-none d-md-block">
         </div>
     </div>
 
 
     <!-- Our Success Stories section start -->
     <div class="container py-5">
-        <div class="row px-4 align-items-center">
+        <div class="row align-items-center">
             <div class="col-12 gx-3 col-md-12 col-lg-5 px-lg-3 px-0 h-100 js-scroll slide-left">
                 <cdiv class="card"
                     style="background-image: linear-gradient(to left top, #6366F1, #8B5CF6, #D946EF);border-radius: 10px;">
@@ -1840,7 +1820,7 @@
             <div class="container py-5">
                 <div class="row justify-content-center text-center py-5">
                     <div class="col-12 text-center js-scroll slide-left">
-                        <h1 class="text-white fs-sm-20">About FinTech</h1>
+                        <h1 class="text-white fs-sm-20 fw-bold">About FinTech</h1>
                         <center>
                             <div style="height:6px;width:100px;background-color: #ffffff;" class="rounded my-3"></div>
                         </center>
@@ -1931,21 +1911,29 @@
             <div class="row justify-content-center">
                 <div class="col-12 col-md-6 col-lg-4 text-center">
                     <img src="assets/images/logo/Asset5sxsr.png" width="128">
-                    <div class="d-flex justify-content-around py-3">
-                        <a class="text-white text-decoration-none" href="#">Home</a>
-                        <a class="text-white text-decoration-none" href="#">About Us</a>
-                        <a class="text-white text-decoration-none" href="#">Courses</a>
+                    <div class="row">
+                        <div class="col-12 text-white py-3 fs-14">
+                            FinVedic Solutions Private Limited
+                        </div>
+                        <div class="col-12 text-white fs-14">
+                            RENT A DESK - Hitec City RAM SVR, Plot No 4/2, Sector 1, Madhapur, HUDA Techno Enclave, HITEC City, Hyderabad, Telangana 500081
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center py-3">
+                        <a class="text-white text-decoration-none mx-3" href="#">Home</a>
+                        <a class="text-white text-decoration-none mx-3" href="#">About Us</a>
+                        <a class="text-white text-decoration-none mx-3" href="#">Courses</a>
                     </div>
                     <div class="row align-items-center ">
-                        <div class="col-6 py-2">
+                        <div class="col-5 py-2">
                             <a class="text-white text-decoration-none  d-flex align-items-center justify-content-center fs-sm-14"
                                 href="tel:+919908011843">
                                 <i class="fa-solid fa-mobile-screen-button text-white"></i>&nbsp; +91 9908011843</a>
                         </div>
-                        <div class="col-6 ">
+                        <div class="col-7 ">
                             <a class="text-white text-decoration-none d-flex align-items-center justify-content-center fs-sm-14"
-                                href="mailto:Sudheer@finvedic.com"><i
-                                    class="fa-regular fa-envelope text-white"></i>&nbsp;
+                                href="mailto:Sudheer@finvedic.com">
+                                <i class="fa-regular fa-envelope text-white"></i> &nbsp;
                                 Sudheer@finvedic.com</a>
                         </div>
                     </div>
@@ -2033,6 +2021,9 @@
             $('html, body').animate({ scrollTop }, 100);
         }
     });
+    function redirectFun(){
+        alert('hia');
+    }
 </script>
 
 </html>
