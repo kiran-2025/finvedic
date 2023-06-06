@@ -4,13 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content=""Finvedic is a FinTech based EdTech platform that specializes in offering trainings on FinTech to provide D1B(Day-1-OnBoarding) delivery capabilities of talent to FinTech corporates, Global Delivery Centers and Startups. />
     <link href="assets/css/CustomeStyle.css" rel="stylesheet">
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
-    <title>FinVedic Website</title>
+    <title>FinVedic - Fintech based EdTech Platform</title>
     <link rel="stylesheet" href="assets/css/splide.css">
     <script src="assets/js/splide.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -30,6 +31,20 @@
         .accordion-button.collapsed {
             background-color: #f3f6ff !important;
             box-shadow: none;
+        }
+
+        .wrapper {
+        padding: 100px;
+        }
+
+        .image--cover {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin: 20px;
+
+        object-fit: cover;
+        object-position: center right;
         }
         
         .accordion-button:not(.collapsed) {
@@ -73,10 +88,18 @@
             transform: scale(1.1);
             transition: 0.25s;
             background-color: red;
-            
             border-radius: 10px 10px 0px 0px;
-            border-bottom: 5px solid #ea63ff;
-            box-shadow: 0px 4px 5px 0px #ea63ff;
+            border-bottom: 5px solid rgba(171,63,208,1);
+            box-shadow: 0px 4px 5px 0px rgba(171,63,208,1);
+                  
+        }
+
+        .live-projects{
+            background: linear-gradient(90deg, rgba(171,63,208,1) 43%, rgba(150,89,230,1) 59%, rgba(150,89,230,0.9668242296918768) 92%);;
+            padding: 10px 10px 10px 10px;
+            opacity: 0.5;
+            position: relative;
+            left: -7%;
         }
 
         .nav.nav-pills .nav-item .nav-link.active img{
@@ -134,6 +157,14 @@
             .logo {
                 width: 116px;
             }
+             .live-projects{
+            background: linear-gradient(90deg, rgba(171,63,208,1) 43%, rgba(150,89,230,1) 59%, rgba(150,89,230,0.9668242296918768) 92%);;
+            padding: 10px 10px 10px 10px;
+            opacity: 0.5;
+            position: relative;
+            left: 3%;
+            margin-top: 3px;
+        }
 
             .header-section {
                 background-image: url('assets/images/Group74702x.png');
@@ -177,6 +208,14 @@
         ol, ul{
             padding-left: 1.225rem;
         }
+        .vertical-text{
+            writing-mode: vertical-rl;
+            transform:rotate(180deg);
+            font-size: 76px;
+        }
+        .nav-link.active.w-100.h-100.text-center:active{
+            transform:scale(1.1);
+        }
     </style>
 </head>
 
@@ -201,7 +240,7 @@
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Cources
                         </a>
-                        <ul class="dropdown-menu bordered dropdown-menu-style" aria-labelledby="navbarDropdown">
+                        <ul class="dropdown-menu bordered dropdown-menu-style" aria-labelledby="navbarDropdown" style="background: #ffff !important;">
                             <li><a class="dropdown-item" href="Payments.html">Payments <i class="fa-solid fa-angle-right"></i></a>
                             </li>
                             <li><a class="dropdown-item" href="#">Banking <i class="fa-solid fa-angle-right"></i></a>
@@ -308,7 +347,7 @@
     </div>
 
     <!-- header section start -->
-    <div class="header-section d-flex align-items-start text-center-sm">
+    <div class="header-section d-flex align-items-start text-center-sm" id="section1">
         <div class="container-fluid header-content">
             <div class="container pb-5">
                 <div class="row h-100 py-5 animate__animated animate__slideInLeft">
@@ -379,7 +418,7 @@
                     field.
                 </div>
             </div>
-            <div class="container h1 text-center fw-bold fs-sm-20">
+            <div class="container h1 text-center fw-bold fs-sm-20 mt-4">
                 Life as a <br class="d-block d-lg-none"> FinVedic Professional
                 <center>
                     <div style="height:6px;width:100px;background-color: #585C7B;" class="rounded mt-3"></div>
@@ -446,7 +485,7 @@
         <!-- Life as a FinVedic Professional end -->
 
         <!-- About Us starts -->
-        <div class="container-fluid py-5 bg-light-gray-lg-grey">
+        <div class="container-fluid py-5 bg-light-gray-lg-grey" id="section2">
             <div class="container">
                 <div class="row bg-light-gray-lg-grey">
                     <div class="col-12 col-lg-6 js-scroll">
@@ -475,7 +514,7 @@
                                     field.
                                     </p> -->
                                 <p class="fs-sm-12">
-                                    FinVedit is a group of enthusiastic professionals who are committed to assisting
+                                    FinVedic is a group of enthusiastic professionals who are committed to assisting
                                     professionals and students in learning more about careers in finance and financial
                                     technology. Our platform offers exclusive labs, user-friendly e-learning, and
                                     ongoing
@@ -509,7 +548,7 @@
         <div class="container text-center pt-5 pb-4">
             <div class="row py-5 js-scroll fade-in mt-4">
                 <div class="col-12 h1 text-white fw-bold  fs-sm-20">
-                    Why FinTech?
+                    Why FinVedic
                     <center>
                         <div style="height:6px;width:100px;background-color: #ffffff;" class="rounded mt-3"></div>
                     </center>
@@ -524,7 +563,7 @@
                                             <img src="assets/images/Live_Projects.png" class="w-100 "
                                                 style="border-radius: 10px;">
                                         </div>
-                                        <div class="col-12 col-md-12 col-lg-5">
+                                        <div class="col-12 col-md-12 col-lg-5 live-projects">
                                             <div class="h1 text-white py-4 fw-bold fs-sm-16">
                                                 Live Projects
                                             </div>
@@ -541,7 +580,7 @@
                                             <img src="assets/images/Specialized_Courses.png" class="w-100"
                                                 style="border-radius: 10px;">
                                         </div>
-                                        <div class="col-12 col-md-12 col-lg-5">
+                                        <div class="col-12 col-md-12 col-lg-5 live-projects">
                                             <div class="h1 text-white py-4 fw-bold fs-sm-16">
                                                 Specialized Courses
                                             </div>
@@ -557,7 +596,7 @@
                                             <img src="assets/images/Placement_Assistance.png" class="w-100"
                                                 style="border-radius: 10px;">
                                         </div>
-                                        <div class="col-12 col-md-12 col-lg-5">
+                                        <div class="col-12 col-md-12 col-lg-5 live-projects">
                                             <div class="h1 text-white py-4 fw-bold fs-sm-16">
                                                 Placement Assistance
                                             </div>
@@ -612,7 +651,7 @@
     </div>
 
     <!-- Specialized FinTech Courses start -->
-    <div class="js-scroll container ">
+    <div class="js-scroll container " id="section3">
         <div class="row">
             <div class="col-12">
                 <div class="container h1 text-center fw-bold fs-sm-20">
@@ -739,7 +778,7 @@
     <!-- Specialized FinTech Courses end -->
 
     <!-- R&D Lab start -->
-    <div class="js-scroll container-fluid mainlab-section"
+    <!-- <div class="js-scroll container-fluid mainlab-section"
         style="background-image:  linear-gradient(white,white,white,white,white,white, #585C7B,#585C7B,#585C7B,#585C7B,#585C7B,white,white, white);">
         <div class="row d-none d-lg-block">
             <div class="col-12">
@@ -809,6 +848,67 @@
 
                     </div>
                 </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 d-none d-md-block">
+                <h2 class="vertical-text">Finvedic Labs</h2>
+            </div>
+            <div class="col-md-5">
+            <div class="d-flex justify-content-center">
+                <div class="">
+                    <!-- <img src="https://blog.ipleaders.in/wp-content/uploads/2022/12/fintech.jpg" alt="" style="width:200px; border-radius: 50%;"> -->
+                    <img src="https://blog.ipleaders.in/wp-content/uploads/2022/12/fintech.jpg" class="image--cover">
+                </div>
+                <div>
+                    <h2 style="position: relative;top: 36%;right: -15%;">R & D Lab</h2>
+                </div>
+            </div>
+            <div>
+                <h5 class="text-center" style="border-bottom: dotted;padding: 11px 14px 10px 11px;border-bottom-color: #6366F1;">Preconfigured Virtual Labs for tailor made Fintech Environment.</h5>
+                
+                <!-- <div class="col-md-6 col-lg-6"> -->
+                    <li class=" fw-bold d-lg-block">Introduction to BFSI & FINTECH</li>
+                    <ul style='list-style-image: url("./listTypeBlue.svg")'>
+                        <li class="fs-sm-12" style="padding: 10px 0px 0px 0px;">Modern Banking Landscape</li>
+                        <li class="fs-sm-12" style="padding: 10px 0px 0px 0px;">Dissecting Finical services value chain</li>
+                        <li class="fs-sm-12" style="padding: 10px 0px 0px 0px;">Introduction to the Fintech landscape</li>
+                        <li class="fs-sm-12" style="padding: 10px 0px 0px 0px;">The Intersection of traditional and new-age
+                            banking
+                        </li>
+                        <li class="fs-sm-12" style="padding: 10px 0px 0px 0px;">Interaction with bank and case studies</li>
+                    </ul>
+                <!-- </div> -->
+            </div>
+            </div>
+            <div class="col-md-5">
+            <div class="d-flex justify-content-center">
+                <div>
+                    <!-- <img src="https://blog.ipleaders.in/wp-content/uploads/2022/12/fintech.jpg" alt="" style="width:200px; border-radius: 50%;"> -->
+                    <img src="https://blog.ipleaders.in/wp-content/uploads/2022/12/fintech.jpg" class="image--cover">
+
+                </div>
+                <div>
+                    <h2 style="position: relative;top: 36%;right: -5%;">Center of Excellence</h2>
+                </div>
+            </div>
+            <div>
+                <h5 class="text-center" style="border-bottom: dotted;padding: 11px 14px 34px 11px;border-bottom-color: #6366F1;">Finvedic center of excellence offers:</h5>
+                <!-- <hr> -->
+                <li class=" fw-bold d-lg-block">Introduction to BFSI & FINTECH</li>
+                <ul style='list-style-image: url("./listTypeBlue.svg")'>
+                    <li class="fs-sm-12" style="padding: 10px 0px 0px 0px;">Modern Banking Landscape</li>
+                    <li class="fs-sm-12" style="padding: 10px 0px 0px 0px;">Dissecting Finical services value chain</li>
+                    <li class="fs-sm-12" style="padding: 10px 0px 0px 0px;">Introduction to the Fintech landscape</li>
+                    <li class="fs-sm-12" style="padding: 10px 0px 0px 0px;">The Intersection of traditional and new-age
+                        banking
+                    </li>
+                    <li class="fs-sm-12" style="padding: 10px 0px 0px 0px;">Interaction with bank and case studies</li>
+                </ul>
+            </div>
             </div>
         </div>
     </div>
@@ -1062,25 +1162,30 @@
                 <ul class="nav nav-pills nav-justified" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active w-100 h-100 text-center" data-bs-toggle="tab"
-                            data-bs-target="#tabone" type="button" role="tab" aria-controls="tabone">
-                            <img src="assets/images/16.png">
-                            <p class="fs-sm-12 d-none d-md-block">FinTech & Finacial Services Landscape</p>
-                        </button>
+                            data-bs-target="#tabone" type="button" id="image-hover-text" role="tab" aria-controls="tabone">
+                            <img src="assets/images/Sample.png">
+                            <p class="fs-sm-12 d-none d-md-block">Landscape</p>
+                           
+                        </button>  
                     </li>
+                    <!--<p class="fs-sm-12 d-none d-md-block">FinTech & Finacial Services Landscape</p>-->
                     <li class="nav-item" role="presentation">
                         <button class="nav-link w-100 h-100 text-center" data-bs-toggle="tab" data-bs-target="#tabtwo"
                             type="button" role="tab" aria-controls="tabtwo">
-                            <img src="assets/images/15.png">
+                            <img src="assets/images/tech.png">
                             <br>
-                            <p class="fs-sm-12  d-none d-md-block">Desruptive Technologies in FinTech</p>
+                            <p class="fs-sm-12  d-none d-md-block">Technologies</p>
+                           
                         </button>
                     </li>
+                    <!--<p class="fs-sm-12  d-none d-md-block">Desruptive Technologies in FinTech</p>-->
                     <li class="nav-item" role="presentation">
                         <button class="nav-link w-100 h-100 text-center" data-bs-toggle="tab" data-bs-target="#tabthree"
                             type="button" role="tab" aria-controls="tabthree">
                             <img src="assets/images/14.png">
                             <br>
-                            <p class="fs-sm-12  d-none d-md-block">The Specializations</p>
+                            <p class="fs-sm-12  d-none d-md-block">Specializations</p>
+                            
                         </button>
                     </li>
                 </ul>
@@ -1549,32 +1654,7 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="col-12 col-md-12 col-lg-9 py-4 d-block d-md-none">
-                <div class="row bg-white mx-2 my-3 p-2 rounded">
-                    <div class="col-3">
-                        <img src="assets/images/16.png" width="100%" height="100%">
-                    </div>
-                    <div class="col-9 fs-sm-20 fw-bold">
-                        FinTech & Finacial Services Landscape
-                    </div>
-                </div>
-                <div class="row bg-white mx-2 my-3 p-2 rounded">
-                    <div class="col-3">
-                        <img src="assets/images/15.png" width="100%" height="100%">
-                    </div>
-                    <div class="col-9 fs-sm-20 fw-bold">
-                        Desruptive Technologies in FinTech
-                    </div>
-                </div>
-                <div class="row bg-white mx-2 my-3 p-2 rounded">
-                    <div class="col-3">
-                        <img src="assets/images/14.png" width="100%" height="100%">
-                    </div>
-                    <div class="col-9 fs-sm-20 fw-bold">
-                        The Specializations
-                    </div>
-                </div>
-            </div> -->
+           
             <div class="col-12 text-center">
                 <a class="btn btn-info text-white px-5" href="broucher.html" style="background: #6366F1;">Download Broucher</a>
             </div>
@@ -1633,8 +1713,10 @@
                                                         width="50" height="50">
                                                 </div>
                                                 <div class="text-sm-center">
-                                                    <p><span class="h5 fs-sm-24">name</span><br>
-                                                        Disignation</p>
+                                                    <p class="mt-4">
+                                                        <span class="h5 fs-sm-24">name</span>
+                                                        <br>
+                                                        Designation</p>
                                                 </div>
                                             </div>
                                             <div class="d-none d-md-none d-lg-block">
@@ -1679,8 +1761,11 @@
                                                         width="50" height="50">
                                                 </div>
                                                 <div class="text-sm-center">
-                                                    <p><span class="h5 fs-sm-24">name</span><br>
-                                                        Disignation</p>
+                                                    <p class="mt-4">
+                                                        <span class="h5 fs-sm-24">name</span>
+                                                        <br>
+                                                        Designation
+                                                    </p>
                                                 </div>
                                             </div>
                                             <div class="d-none d-md-none d-lg-block">
@@ -1722,8 +1807,11 @@
                                                         width="50" height="50">
                                                 </div>
                                                 <div class="text-sm-center">
-                                                    <p><span class="h5 fs-sm-24">name</span><br>
-                                                        Disignation</p>
+                                                    <p class="mt-4">
+                                                        <span class="h5 fs-sm-24">name</span>
+                                                        <br>
+                                                        Designation
+                                                    </p>
                                                 </div>
                                             </div>
                                             <div class="d-none d-md-none d-lg-block">
@@ -1766,61 +1854,14 @@
             </div>
         </div>
     </div>
-    <!-- Our Success Stories section end -->
-    <!-- Our Instructors' Industry Background start -->
-    <!-- <div class="container">
-        <div class="row py-5 justify-content-center g-3">
-            <div class="col-12 text-center js-scroll">
-                <h1>Our Instructors' Industry Background</h1>
-                <center>
-                    <div style="height:6px;width:100px;background-color: #585C7B;" class="rounded my-3"></div>
-                </center>
-            </div>
-        </div>
-        <div class="row justify-content-center g-3 js-scroll ">
-            <div class="col-4 col-md-3 col-lg-2 p-2">
-                <img src="assets/images/icons/Group141.svg" class="w-100">
-            </div>
-            <div class="col-4 col-md-3 col-lg-2 p-2">
-                <img src="assets/images/icons/Group140.png" class="w-100">
-            </div>
-            <div class="col-4 col-md-3 col-lg-2 p-2">
-                <img src="assets/images/icons/Group139.png" class="w-100">
-            </div>
-            <div class="col-4 col-md-3 col-lg-2 p-2">
-                <img src="assets/images/icons/Group138.png" class="w-100">
-            </div>
-            <div class="col-4 col-md-3 col-lg-2 p-2">
-                <img src="assets/images/icons/Group137.png" class="w-100">
-            </div>
-            <div class="col-4 col-md-3 col-lg-2 p-2">
-                <img src="assets/images/icons/Group136.png" class="w-100">
-            </div>
-            <div class="col-4 col-md-3 col-lg-2 p-2">
-                <img src="assets/images/icons/Group143.png" class="w-100">
-            </div>
-            <div class="col-4 col-md-3 col-lg-2 p-2">
-                <img src="assets/images/icons/Group142.png" class="w-100">
-            </div>
-            <div class="col-4 col-md-3 col-lg-2 p-2">
-                <img src="assets/images/icons/Group134.png" class="w-100">
-            </div>
-            <div class="col-4 col-md-3 col-lg-2 p-2">
-                <img src="assets/images/icons/Group135.png" class="w-100">
-            </div>
-
-        </div>
-    </div> -->
-    <!-- Our Instructors' Industry Background end -->
-
-    <!-- about fintech section start -->
+    
     <div class="js-scroll container-fluid"
         style="background-image: linear-gradient(to bottom,white 50% , #131022 50%);">
         <div class="about-section py-5 w-100" style="background-image:url('assets/images/img/Subtraction62x.png');">
             <div class="container py-5">
                 <div class="row justify-content-center text-center py-5">
                     <div class="col-12 text-center js-scroll slide-left">
-                        <h1 class="text-white fs-sm-20 fw-bold">About FinTech</h1>
+                        <h1 class="text-white fs-sm-20 fw-bold">About FinVedic</h1>
                         <center>
                             <div style="height:6px;width:100px;background-color: #ffffff;" class="rounded my-3"></div>
                         </center>
@@ -1912,17 +1953,27 @@
                 <div class="col-12 col-md-6 col-lg-4 text-center">
                     <img src="assets/images/logo/Asset5sxsr.png" width="128">
                     <div class="row">
-                        <div class="col-12 text-white py-3 fs-14">
+                        <div class="col-12 text-white py-3 fs-14 h5">
                             FinVedic Solutions Private Limited
                         </div>
-                        <div class="col-12 text-white fs-14">
-                            RENT A DESK - Hitec City RAM SVR, Plot No 4/2, Sector 1, Madhapur, HUDA Techno Enclave, HITEC City, Hyderabad, Telangana 500081
+                        <div class="col-12 text-white fs-14" >
+                            <div class="text-white h6" style="line-height: 30px;">
+                                RENT A DESK - Hitech City
+                                
+                                RAM SVR, Plot No 4/2, Sector 1,
+                                
+                                Madhapur, HUDA Techno
+                                
+                                Enclave, HI-TECH City, Hyderabad,
+                                
+                                Telangana 500081
+                            </div>
                         </div>
                     </div>
                     <div class="d-flex justify-content-center py-3">
-                        <a class="text-white text-decoration-none mx-3" href="#">Home</a>
-                        <a class="text-white text-decoration-none mx-3" href="#">About Us</a>
-                        <a class="text-white text-decoration-none mx-3" href="#">Courses</a>
+                        <a class="text-white text-decoration-none mx-3" href="#section1">Home</a>
+                        <a class="text-white text-decoration-none mx-3" href="#section2">About Us</a>
+                        <a class="text-white text-decoration-none mx-3" href="#section3">Courses</a>
                     </div>
                     <div class="row align-items-center ">
                         <div class="col-5 py-2">
@@ -1934,7 +1985,7 @@
                             <a class="text-white text-decoration-none d-flex align-items-center justify-content-center fs-sm-14"
                                 href="mailto:Sudheer@finvedic.com">
                                 <i class="fa-regular fa-envelope text-white"></i> &nbsp;
-                                Sudheer@finvedic.com</a>
+                                support@finvedic.com</a>
                         </div>
                     </div>
                     <div class="d-flex justify-content-center py-2">
@@ -1956,8 +2007,8 @@
         </div>
         <div class="container">
             <div class="d-flex justify-content-center py-2">
-                <a class="text-white fs-12 mx-4" href="#">Terms & Conditions</a>
-                <a class="text-white fs-12 mx-4" href="#">Privacy Policy</a>
+                <a class="text-white fs-12 mx-4 text-decoration-none" href="#">Terms & Conditions</a>
+                <a class="text-white fs-12 mx-4 text-decoration-none" href="#">Privacy Policy</a>
             </div>
         </div>
         <div class="d-flex justify-content-around py-2">
@@ -2025,5 +2076,13 @@
         alert('hia');
     }
 </script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P11FBKLN2D"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
+    gtag('config', 'G-P11FBKLN2D');
+</script>
 </html>
