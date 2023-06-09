@@ -486,6 +486,7 @@ dd i {
     .join-btn {
         background-color: #ffffff !important;
         color: #6366F1 !important;
+
     }
 
     .card-text {
@@ -636,4 +637,7 @@ input[type=number]:focus,
 [contenteditable].form-control:focus {
     
     box-shadow: inset 0 -1px 0 #ddd;
+}
+#email{
+    padding-top: 5px;
 }
